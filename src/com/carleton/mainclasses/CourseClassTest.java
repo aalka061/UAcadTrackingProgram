@@ -55,6 +55,29 @@ public class CourseClassTest {
 		expcectedList.add(new Student());
 		assertEquals(expcectedList.size(),studentList.size());
 		
+		// test 2 - check if specific student is added using general constructor 
+		courseUnderTest.addStudent(new Student());
+		String expectedName="UnKnown";
+		int expectedNumber=0;
+		int expectedAge=17;
+		assertEquals(expectedName,courseUnderTest.Students().get(0).getName());
+		assertEquals(expectedNumber,courseUnderTest.Students().get(0).getNumber());
+		assertEquals(expectedAge,courseUnderTest.Students().get(0).getAge());
+		
+		// test 3 - check if specific student is added using parameterized constructor 
+		courseUnderTest.addStudent(new Student("Ahmed",19));
+		expectedName="Ahmed";
+		expectedNumber=1;
+		expectedAge=19;
+		assertEquals(expectedName,courseUnderTest.Students().get(2).getName());
+		assertEquals(expectedNumber,courseUnderTest.Students().get(2).getNumber());
+		assertEquals(expectedAge,courseUnderTest.Students().get(2).getAge());
+
+
+	
+
+		
+		
 	}
 	
 	
