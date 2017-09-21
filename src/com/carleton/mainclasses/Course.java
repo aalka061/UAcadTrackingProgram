@@ -1,10 +1,29 @@
 package com.carleton.mainclasses;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Course {
 	
 	private String title;
 	private int code; 
-
+	private boolean enforcePrereqs=false;
+	private int numberOfMidterms;
+	private boolean hasAFinal = false;
+	private int capSize;
+	public static int instances =0;
+	private ArrayList<Student> studentList;
+		
+	
+	// Default constructor. Populates course name, number of students with defaults
+	public Course (){
+		instances++;
+		this.title = "Not Set";
+		this.numberOfMidterms=0;
+		this.capSize=0;
+		this.code=10000;
+		
+	}
 	public Course(String title,int myCode) {
 		this.title=title; 
 		// first 2 digits represents dept code and the the last the corse code
@@ -13,7 +32,9 @@ public class Course {
 			
 		}
 		this.code = myCode; 
-		// TODO Auto-generated constructor stub
+		
+		studentList = new ArrayList<Student>();
+		
 	}
 	
 	public void setCode(int code) {
@@ -21,6 +42,32 @@ public class Course {
 	}
 	public int getCode() {
 		return code;
+	}
+	
+	public int getCapSize() {
+		return capSize;
+	}
+	public int getNumberOfMidterms() {
+		return numberOfMidterms;
+	}
+	
+	public boolean isEnforcePrereqs() {
+		return enforcePrereqs;
+	}
+	
+	
+	public void setCapSize(int capSize) {
+		this.capSize = capSize;
+	}
+	public void setEnforcePrereqs(boolean enforcePrereqs) {
+		this.enforcePrereqs = enforcePrereqs;
+	}
+	public void setNumberOfMidterms(int numberOfMidterms) {
+		this.numberOfMidterms = numberOfMidterms;
+	}
+	
+	public void setHasAFinal(boolean hasAFinal) {
+		this.hasAFinal = hasAFinal;
 	}
 		
 	
@@ -42,6 +89,18 @@ public class Course {
 			return true;
 		}
 		return false; 
+		
+	}
+
+	public List<Student> Students() {
+		// TODO Auto-generated method stub
+		return studentList;
+	
+	}
+	public boolean addStudent(Student student) {
+		studentList.add(student);
+		return true;
+		// TODO Auto-generated method stub
 		
 	}
 

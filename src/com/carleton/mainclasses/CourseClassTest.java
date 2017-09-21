@@ -2,6 +2,9 @@ package com.carleton.mainclasses;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +14,6 @@ public class CourseClassTest {
 
 	@Before
 	public void setUp() throws Exception {
-		
 		courseUnderTest= new Course ("software developement",100000); 
 	}
 
@@ -41,6 +43,18 @@ public class CourseClassTest {
 	@Test(expected = IllegalArgumentException.class)
 	public void constructorShouldThrowIllegalArgumentExceptionTest2() {
 	    Course newCourse = new Course("SD",1111);
+	}
+	
+	
+	@Test
+	public void testStudents() {
+		// test 1 - size of student list after adding a student to the course
+		courseUnderTest.addStudent(new Student());
+		List<Student>studentList= courseUnderTest.Students();
+		List <Student> expcectedList = new ArrayList<Student>();
+		expcectedList.add(new Student());
+		assertEquals(expcectedList.size(),studentList.size());
+		
 	}
 	
 	
