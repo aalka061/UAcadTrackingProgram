@@ -103,6 +103,15 @@ public class Course {
 		// TODO Auto-generated method stub
 		
 	}
+	public Boolean removeStudent(Student toBeDeletedStudent) {
+		if (studentList.contains(toBeDeletedStudent) && toBeDeletedStudent!=null){
+			studentList.remove(toBeDeletedStudent);
+			return true;
+		}
+		return false; 
+		// TODO Auto-generated method stub
+		
+	}
 
 
 }

@@ -71,14 +71,24 @@ public class CourseClassTest {
 		expectedAge=19;
 		assertEquals(expectedName,courseUnderTest.Students().get(2).getName());
 		assertEquals(expectedNumber,courseUnderTest.Students().get(2).getNumber());
-		assertEquals(expectedAge,courseUnderTest.Students().get(2).getAge());
-
-
+		assertEquals(expectedAge,courseUnderTest.Students().get(2).getAge());		
+	}
 	
-
+	@Test
+	public void testRemoveStudent(){
+		// test 1 - remove a student from the list
+		courseUnderTest.addStudent(new Student());
+		Student newStudent = new Student ();
+		courseUnderTest.addStudent(newStudent);
+		List<Student>studentList= courseUnderTest.Students();
+		List <Student> expcectedList = new ArrayList<Student>();
+		expcectedList.add(new Student());
+		courseUnderTest.removeStudent(newStudent);
+		assertEquals(expcectedList.size(),studentList.size());
 		
 		
 	}
+	
 	
 	
 
