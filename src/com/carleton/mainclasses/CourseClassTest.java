@@ -7,10 +7,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class CourseClassTest {
+	Course course = new Course ("software developement"); 
 
 	@Before
 	public void setUp() throws Exception {
-	Course course = new Course (); 
 	}
 
 	@After
@@ -19,9 +19,9 @@ public class CourseClassTest {
 
 	@Test
 	public void testTitle() {
-		
-		System.out.println("welcome");
-		fail("Not yet implemented");
+		String courseTitle = course.title();
+		assertNotNull(courseTitle);
+	
 	}
 
 }
