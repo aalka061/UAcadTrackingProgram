@@ -90,15 +90,72 @@ public class CourseClassTest {
 	}
 	 
 	@Test
-	public void weightOfAssignment_returningWeightForEachAssignment(){
+	public void weightOfAssignment_NoAssignement_returingZero(){
 		//assignemnt number is from 0 to 5
 		// test 1 if it the parameter is 0 then the function should return 0
 		int expectedWeight = 0;
 		int actualWeight = courseUnderTest.WeightOfAssignment(0);
 		assertEquals(expectedWeight,actualWeight);
-		// 
-		
 	}
+	/*
+	@Test
+	public void weightOfAssignment_OneAssignement(){
+		//assignemnt number is from 0 to 5
+		// test 1 if it the parameter is 0 then the function should return 0
+		int expectedWeight = 0;
+		int actualWeight = courseUnderTest.WeightOfAssignment(0);
+		assertEquals(expectedWeight,actualWeight);
+	} */
+	@Test
+	public void weightOfMidterm_NoMidterm_returingZero(){
+		//midtermNum number is from 0 to 2
+		//if the parameter is 0 then the function should return 0
+		int expectedWeight = 0;
+		int actualWeight = courseUnderTest.WeightOfMidterm(0);
+		assertEquals(expectedWeight,actualWeight);
+	}
+	
+	/*
+	@Test
+	public void weightOfMidterm_OneMidterm_returingZero(){
+		//midtermNum number is from 0 to 2
+		//if the parameter is 0 then the function should return 0
+		int expectedWeight = 0;
+		int actualWeight = courseUnderTest.WeightOfMidterm(0);
+		assertEquals(expectedWeight,actualWeight);
+	}*/
+	/*
+	@Test
+	public void weightOfMidterm_twoMidterm_returingZero(){
+		//midtermNum number is from 0 to 2
+		//if the parameter is 0 then the function should return 0
+		int expectedWeight = 0;
+		int actualWeight = courseUnderTest.WeightOfMidterm(0);
+		assertEquals(expectedWeight,actualWeight);
+	}*/
+	
+	@Test
+	public void weightOfFinal_hasFinalIsFalse_returingZero(){
+		//midtermNum number is from 0 to 2
+		//if the parameter is 0 then the function should return 0
+		int expectedWeight = 0;
+		int actualWeight = courseUnderTest.WeightOfFinal();
+		assertEquals(expectedWeight,actualWeight);
+	}
+	
+	@Test
+	public void weightOfFinal_hasFinalIsTrue_returingFiftyForNow(){
+		//midtermNum number is from 0 to 2
+		//if the parameter is 0 then the function should return 0
+		int expectedWeight = 50;
+		courseUnderTest.setHasAFinal(true);
+		int actualWeight = courseUnderTest.WeightOfFinal();
+		assertEquals(expectedWeight,actualWeight);
+	}
+	
+	
+	 
+	
 	
 	
 	

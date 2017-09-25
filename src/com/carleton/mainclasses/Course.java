@@ -8,7 +8,8 @@ public class Course {
 	private String title;
 	private int code; 
 	private boolean enforcePrereqs=false;
-	private int numberOfMidterms;
+	private int numberOfMidterms;     //Between 0-2
+	private int numberOfAssignments;  //Between 0-5
 	private boolean hasAFinal = false;
 	private int capSize;
 	public static int instances =0;
@@ -116,6 +117,19 @@ public class Course {
 		// TODO Auto-generated method stub
 			return 0;
 		
+		
+	}
+	public int WeightOfMidterm(int midtermNum) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public int WeightOfFinal() {
+		// TODO Auto-generated method stub
+		if (hasAFinal==false)
+			return 0;
+		else 
+			return 50;
 		
 	}
 
