@@ -112,6 +112,12 @@ public class Course {
 		// TODO Auto-generated method stub
 		
 	}
+	public int WeightOfAssignment(int assignmentNumber) {
+		// TODO Auto-generated method stub
+			return 0;
+		
+		
+	}
 
 
 }

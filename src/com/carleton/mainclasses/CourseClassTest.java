@@ -75,7 +75,7 @@ public class CourseClassTest {
 	}
 	
 	@Test
-	public void testRemoveStudent(){
+	public void removeStudent_removingStudentFromCourse(){
 		// test 1 - remove a student from the list
 		courseUnderTest.addStudent(new Student());
 		Student newStudent = new Student ();
@@ -86,6 +86,17 @@ public class CourseClassTest {
 		courseUnderTest.removeStudent(newStudent);
 		assertEquals(expcectedList.size(),studentList.size());
 		
+		
+	}
+	 
+	@Test
+	public void weightOfAssignment_returningWeightForEachAssignment(){
+		//assignemnt number is from 0 to 5
+		// test 1 if it the parameter is 0 then the function should return 0
+		int expectedWeight = 0;
+		int actualWeight = courseUnderTest.WeightOfAssignment(0);
+		assertEquals(expectedWeight,actualWeight);
+		// 
 		
 	}
 	
