@@ -30,6 +30,10 @@ public class Student {
 		// TODO Auto-generated method stub
 		return age;
 	}
+	public int studentNumber() {
+		// TODO Auto-generated method stub
+		return getNumber();
+	}
 	
 
 }

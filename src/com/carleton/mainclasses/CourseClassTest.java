@@ -85,7 +85,9 @@ public class CourseClassTest {
 		expcectedList.add(new Student());
 		boolean isRemovedActual= courseUnderTest.removeStudent(newStudent);
 		assertEquals(expcectedList.size(),studentList.size());
+		// test if student is removed
 		assertTrue(isRemovedActual);
+		
 		
 	}
 	 
