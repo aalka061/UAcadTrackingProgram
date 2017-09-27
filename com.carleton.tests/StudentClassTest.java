@@ -40,10 +40,7 @@ public class StudentClassTest {
 		int sNumberExpected= 1;
 		assertEquals(sNumberExpected,sNumberActual);
 
-		
 	}
 	
 	
-	
-
 }
