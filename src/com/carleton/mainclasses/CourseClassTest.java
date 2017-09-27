@@ -83,9 +83,9 @@ public class CourseClassTest {
 		List<Student>studentList= courseUnderTest.Students();
 		List <Student> expcectedList = new ArrayList<Student>();
 		expcectedList.add(new Student());
-		courseUnderTest.removeStudent(newStudent);
+		boolean isRemovedActual= courseUnderTest.removeStudent(newStudent);
 		assertEquals(expcectedList.size(),studentList.size());
-		
+		assertTrue(isRemovedActual);
 		
 	}
 	 
