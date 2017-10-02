@@ -32,5 +32,15 @@ public class UniversityClassTest {
 	public void numberOfUniversityCourses_returningExeptionBecauseOfOffLimits() {
 		ApplicationUniversityMediator tempUni=new ApplicationUniversityMediator(27);
 	}
+	
+	@Test
+	public void maxCoursesFTStudents_returingFour() {
+		int numberOfFTStudents=universityUnderTest.getNumberOfMaxUniversityCourses();
+		int expectedNumberOfCourses=4;
+		assertEquals(expectedNumberOfCourses,numberOfFTStudents);
+
+	}
+	
+	
 
 }

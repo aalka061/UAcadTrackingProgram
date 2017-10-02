@@ -3,6 +3,8 @@ package com.carleton.mainclasses;
 public class ApplicationUniversityMediator implements UniversityMediator  {
 	
 	private Integer universtityCourses;  
+    
+	
 	
 	public ApplicationUniversityMediator (int universtityCourses) {
 		if(universtityCourses<0 || universtityCourses>25){
@@ -17,6 +19,13 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 	public int getNumberOfUniversityCourses() {
 		// TODO Auto-generated method stub
 		return universtityCourses;
+	}
+
+
+	public int getNumberOfMaxUniversityCourses() {
+		// TODO Auto-generated method stub
+		return MaxCoursesForFTStudents;
+
 	}
 
 }
