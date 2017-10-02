@@ -34,4 +34,10 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		return MaxCoursesForPTStudents;
 	}
 
+
+	public int getPassRate() {
+		// TODO Auto-generated method stub
+		return PassRate;
+	}
+
 }

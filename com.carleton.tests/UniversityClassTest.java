@@ -49,6 +49,16 @@ public class UniversityClassTest {
 
 	}
 	
+	@Test
+	public void passRate_returingSeventey() {
+		int numberOfFTStudents=universityUnderTest.getPassRate();
+		int expectedNumberOfCourses=70;
+		assertEquals(expectedNumberOfCourses,numberOfFTStudents);
+
+	}
+	
+	
+	
 	
 
 }

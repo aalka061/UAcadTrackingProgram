@@ -4,6 +4,8 @@ public interface UniversityMediator {
 
     public static final int MaxCoursesForFTStudents=4;
     public static final int MaxCoursesForPTStudents=2;
+    public static final int PassRate=70;
+
 
 
 }
