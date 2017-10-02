@@ -35,8 +35,16 @@ public class UniversityClassTest {
 	
 	@Test
 	public void maxCoursesFTStudents_returingFour() {
-		int numberOfFTStudents=universityUnderTest.getNumberOfMaxUniversityCourses();
+		int numberOfFTStudents=universityUnderTest.getNumberOfMaxFTStudents();
 		int expectedNumberOfCourses=4;
+		assertEquals(expectedNumberOfCourses,numberOfFTStudents);
+
+	}
+	
+	@Test
+	public void maxCoursesPTStudents_returingTwo() {
+		int numberOfFTStudents=universityUnderTest.getNumberOfMaxPTStudents();
+		int expectedNumberOfCourses=2;
 		assertEquals(expectedNumberOfCourses,numberOfFTStudents);
 
 	}

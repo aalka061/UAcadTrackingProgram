@@ -22,10 +22,16 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 	}
 
 
-	public int getNumberOfMaxUniversityCourses() {
+	public int getNumberOfMaxFTStudents() {
 		// TODO Auto-generated method stub
 		return MaxCoursesForFTStudents;
 
+	}
+
+
+	public int getNumberOfMaxPTStudents() {
+		// TODO Auto-generated method stub
+		return MaxCoursesForPTStudents;
 	}
 
 }
