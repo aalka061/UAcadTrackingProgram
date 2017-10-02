@@ -15,7 +15,7 @@ public class StudentClassTest {
 
 	@Before
 	public void setUp() throws Exception {
-		studentUnderTestParametrized = new Student("Karev",18);
+		studentUnderTestParametrized = new Student("Karev",18,true);
 		
 	}
 
@@ -28,8 +28,6 @@ public class StudentClassTest {
 		int sNumberExpected= 0;
 		assertEquals(sNumberExpected,sNumberActual);
 		
-
-		
 	}
 	
 
@@ -37,10 +35,38 @@ public class StudentClassTest {
 	public void studentNumber_paraConst_returingOne(){
 		// Parameterized constructor 
 		int sNumberActual = studentUnderTestParametrized.studentNumber();
-		int sNumberExpected= 1;
+		int sNumberExpected= 2;
 		assertEquals(sNumberExpected,sNumberActual);
 
 	}
+	
+	@Test
+	public void isFullTime_isStudentFullTime_returingTrue(){
+		// Parameterized constructor 
+		boolean isFullTime = studentUnderTestParametrized.isFullTime();
+		assertTrue(isFullTime);
+
+	}
+	
+	@Test
+	public void registerCourse_registerStudentToCourse_returningTrue(){
+		// Parameterized constructor 
+		Course newCourse = new Course();
+		boolean isReigsitered= studentUnderTestParametrized.registerCourse(newCourse);
+		assertTrue(isReigsitered);
+
+	}
+	
+	@Test
+	public void isCreated_testingIfstudentIsCreatedByUniversity_returningTrue(){
+		// Parameterized constructor 
+		
+		boolean isCreated= studentUnderTestParametrized.isCreated();
+		assertTrue(isCreated);
+
+	}
+	
+	
 	
 	
 }

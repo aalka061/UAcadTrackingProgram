@@ -65,7 +65,7 @@ public class CourseClassTest {
 		assertEquals(expectedAge,courseUnderTest.Students().get(0).getAge());
 		
 		// test 3 - check if specific student is added using parameterized constructor 
-		courseUnderTest.addStudent(new Student("Ahmed",19));
+		courseUnderTest.addStudent(new Student("Ahmed",19, true));
 		expectedName="Ahmed";
 		expectedNumber=1;
 		expectedAge=19;
