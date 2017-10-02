@@ -25,6 +25,32 @@ public class Course {
 		this.code=10000;
 		
 	}
+	public Course (String title,boolean enforcePrereqs, int numberOfMidterms, int numberOfAssignments, 
+			boolean hasAFinal, int capSize){
+		this.title = title;
+		this.enforcePrereqs= enforcePrereqs;
+		if(numberOfMidterms<0 || numberOfMidterms>2){
+			  throw new IllegalArgumentException();
+		} else {
+			this.numberOfMidterms = numberOfMidterms;
+		}
+		
+		if(numberOfAssignments<0 || numberOfAssignments>5){
+			  throw new IllegalArgumentException();
+		} else {
+			this.numberOfAssignments = numberOfAssignments;
+		}
+		
+		this.hasAFinal=hasAFinal;
+		
+		if(capSize<25){
+			  throw new IllegalArgumentException();
+		} else {
+			this.capSize=capSize;
+		}
+		
+	}
+	
 	public Course(String title,int myCode) {
 		this.title=title; 
 		// first 2 digits represents dept code and the the last the corse code

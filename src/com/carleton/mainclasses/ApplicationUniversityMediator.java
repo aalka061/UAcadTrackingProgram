@@ -1,8 +1,12 @@
 package com.carleton.mainclasses;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ApplicationUniversityMediator implements UniversityMediator  {
 	
 	private Integer universtityCourses;  
+	
     
 	
 	
@@ -13,8 +17,8 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		this.universtityCourses = universtityCourses;
 		}
 		
+		
 	}
-	
 	
 	public int getNumberOfUniversityCourses() {
 		// TODO Auto-generated method stub
@@ -38,6 +42,21 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 	public int getPassRate() {
 		// TODO Auto-generated method stub
 		return PassRate;
+	}
+
+
+	public void creatCourse(String string, int cap) {
+		// TODO Auto-generated method stub
+		
+		Course newCourse = new Course ("OOD",false,0,0,true,cap);
+		coursesOfUniversity.add(newCourse);
+	}
+
+
+	public List<Course> courses() {
+		
+		// TODO Auto-generated method stub
+		return coursesOfUniversity;
 	}
 
 }

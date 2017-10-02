@@ -52,10 +52,25 @@ public class UniversityClassTest {
 	@Test
 	public void passRate_returingSeventey() {
 		int numberOfFTStudents=universityUnderTest.getPassRate();
-		int expectedNumberOfCourses=70;
-		assertEquals(expectedNumberOfCourses,numberOfFTStudents);
+		int expectedPassRate=70;
+		assertEquals(expectedPassRate,numberOfFTStudents);
 
 	}
+	
+	
+	// testing create Course 
+	
+	@Test
+	public void createCourse_returingCourseThatIsCreated() {
+		
+		int cap = 60;
+		universityUnderTest.creatCourse("object oriented Development",60);
+		int actualNumberOfCourses= universityUnderTest.courses().size();
+		int expectedNumberOfCourses=1;
+		assertEquals(actualNumberOfCourses,expectedNumberOfCourses);
+
+	}
+	
 	
 	
 	
