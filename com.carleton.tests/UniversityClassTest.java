@@ -81,6 +81,21 @@ public class UniversityClassTest {
 		assertEquals(expectedNumberOfStudents,actualNumberOfStudents);
 	}
 	
+	/*
+	@Test
+	public void registerSutdentForCourse_givenaCourseAndStudent() {
+		
+		Course newCourse = universityUnderTest.creatCourse("OOD",50);
+		Student newStudent= universityUnderTest.creatStudent("Ahmed",18,false);
+		universityUnderTest.registerStudentForCourse(newStudent,newCourse);
+		int expectedNumberOfCurrentCourseForStudent= newStudent.current
+		assertEquals(expectedNumberOfStudents,actualNumberOfStudents);
+	}
+	*/
+	
+	
+	
+	
 	
 	
 

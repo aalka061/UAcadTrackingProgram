@@ -64,6 +64,19 @@ public class StudentClassTest {
 		assertTrue(isCreated);
 	}
 	
+	@Test
+	public void currentCourses_thecurrentCoursesRegisteredIn_returningListOfCourses(){
+		
+		Course newCourse = new Course();
+		// register student to the new course
+		studentUnderTestParametrized.registerCourse(newCourse);
+		String expectedTitle= newCourse.title();
+		String actualTitle = studentUnderTestParametrized.getCurrentCourses().get(0).title();
+		assertEquals(expectedTitle,actualTitle);
+
+	}
+	
+	
 	
 	
 	

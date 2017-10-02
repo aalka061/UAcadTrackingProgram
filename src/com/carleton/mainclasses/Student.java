@@ -29,7 +29,7 @@ public class Student {
 		this.age=age;
 		this.isFullTime=isFullTime;
 		this.isCreated = true;
-		currentCourses = new ArrayList<Course>();
+		setCurrentCourses(new ArrayList<Course>());
 	}
 	public String getName() {
 		// TODO Auto-generated method stub
@@ -55,7 +55,7 @@ public class Student {
 	public boolean registerCourse(Course newCourse) {
 		// TODO Auto-generated method stub
 		if (newCourse !=null){
-			currentCourses.add(newCourse);
+			getCurrentCourses().add(newCourse);
 			return true; 
 		}
 		return false;
@@ -64,6 +64,14 @@ public class Student {
 	public boolean isCreated() {
 		// TODO Auto-generated method stub
 		return isCreated;
+	}
+
+	public ArrayList<Course> getCurrentCourses() {
+		return currentCourses;
+	}
+
+	public void setCurrentCourses(ArrayList<Course> currentCourses) {
+		this.currentCourses = currentCourses;
 	}
 	
 

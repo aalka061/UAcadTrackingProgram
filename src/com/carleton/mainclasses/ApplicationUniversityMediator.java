@@ -45,11 +45,12 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 	}
 
 
-	public void creatCourse(String string, int cap) {
+	public Course creatCourse(String string, int cap) {
 		// TODO Auto-generated method stub
 		
 		Course newCourse = new Course ("OOD",false,0,0,true,cap);
 		coursesOfUniversity.add(newCourse);
+		return newCourse;
 	}
 
 
