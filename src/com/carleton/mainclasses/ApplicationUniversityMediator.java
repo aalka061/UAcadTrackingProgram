@@ -59,4 +59,17 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		return coursesOfUniversity;
 	}
 
+	public List<Student> students() {
+		// TODO Auto-generated method stub
+		return studentsOfUniversity;
+	}
+
+	public Student creatStudent(String name, int age, boolean isFullTime) {
+		// TODO Auto-generated method stub
+		Student newStudent= new Student(name,age,isFullTime);
+		studentsOfUniversity.add(newStudent);
+		return newStudent;
+		
+	}
+	
 }

@@ -26,7 +26,8 @@ public class Course {
 		
 	}
 	public Course (String title,boolean enforcePrereqs, int numberOfMidterms, int numberOfAssignments, 
-			boolean hasAFinal, int capSize){
+		boolean hasAFinal, int capSize){
+		
 		this.title = title;
 		this.enforcePrereqs= enforcePrereqs;
 		if(numberOfMidterms<0 || numberOfMidterms>2){

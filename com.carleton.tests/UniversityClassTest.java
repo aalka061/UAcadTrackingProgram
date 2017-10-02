@@ -58,20 +58,28 @@ public class UniversityClassTest {
 	}
 	
 	
-	// testing create Course 
+	// testing create a Course 
 	
 	@Test
 	public void createCourse_returingCourseThatIsCreated() {
 		
 		int cap = 60;
-		universityUnderTest.creatCourse("object oriented Development",60);
+		universityUnderTest.creatCourse("object oriented Development",cap);
 		int actualNumberOfCourses= universityUnderTest.courses().size();
 		int expectedNumberOfCourses=1;
 		assertEquals(actualNumberOfCourses,expectedNumberOfCourses);
-
 	}
 	
-	
+	@Test
+	public void createStudent_returingStudnetThatIsCreated() {
+		int age = 20;
+		boolean isFullTime=true;
+		String name = "Michelle";
+		universityUnderTest.creatStudent(name,age,isFullTime);
+		int actualNumberOfStudents= universityUnderTest.students().size();
+		int expectedNumberOfStudents=1;
+		assertEquals(expectedNumberOfStudents,actualNumberOfStudents);
+	}
 	
 	
 	
