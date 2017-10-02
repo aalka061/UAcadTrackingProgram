@@ -60,10 +60,8 @@ public class StudentClassTest {
 	@Test
 	public void isCreated_testingIfstudentIsCreatedByUniversity_returningTrue(){
 		// Parameterized constructor 
-		
 		boolean isCreated= studentUnderTestParametrized.isCreated();
 		assertTrue(isCreated);
-
 	}
 	
 	
