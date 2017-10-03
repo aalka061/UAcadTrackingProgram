@@ -49,7 +49,8 @@ public class Course {
 		} else {
 			this.capSize=capSize;
 		}
-		
+		studentList = new ArrayList<Student>();
+
 	}
 	
 	public Course(String title,int myCode) {
@@ -126,8 +127,11 @@ public class Course {
 	
 	}
 	public boolean addStudent(Student student) {
-		studentList.add(student);
-		return true;
+		if (student!=null){
+			studentList.add(student);
+			return true; 
+		} 
+		return false; 
 		// TODO Auto-generated method stub
 		
 	}

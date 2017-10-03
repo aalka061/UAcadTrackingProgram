@@ -1,5 +1,6 @@
 import static org.junit.Assert.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -81,17 +82,43 @@ public class UniversityClassTest {
 		assertEquals(expectedNumberOfStudents,actualNumberOfStudents);
 	}
 	
-	/*
+	
 	@Test
 	public void registerSutdentForCourse_givenaCourseAndStudent() {
 		
+		//assumption : the student is created through the procedure createCourse 
+		//             the course is crreated throguh the procedure of createStudent 
+		// new course 
 		Course newCourse = universityUnderTest.creatCourse("OOD",50);
+		// new student
 		Student newStudent= universityUnderTest.creatStudent("Ahmed",18,false);
+		//register the new student to the new course
 		universityUnderTest.registerStudentForCourse(newStudent,newCourse);
-		int expectedNumberOfCurrentCourseForStudent= newStudent.current
-		assertEquals(expectedNumberOfStudents,actualNumberOfStudents);
+		// expectations : 1)the course will be shown in the sutdent's end in currentCourses List
+		//                2)a new student will be added to the studentList of the new course
+		// -------------------Case 1--------------------
+		String expectedTitle = newStudent.getCurrentCourses().get(0).title();
+		//actual : the tile of the new course 
+		String actualTitle = newCourse.title();
+		// assert : is actual.equals expected
+		assertEquals(expectedTitle,actualTitle);
+		
+		// -------------------Case 2----------------------
+		// expected : student name of new course 
+		String expectedStudentName= newStudent.getName();
+		//actual : the tile of the new course 
+		String actualStudentName = newCourse.Students().get(0).getName();
+		
+		assertEquals(expectedStudentName,actualStudentName);
+
 	}
-	*/
+	
+	@After
+	public void tearDown(){
+		universityUnderTest.courses().clear();
+		
+	}
+	
 	
 	
 	

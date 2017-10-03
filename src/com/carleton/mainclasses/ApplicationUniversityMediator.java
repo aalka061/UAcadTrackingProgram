@@ -72,5 +72,12 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		return newStudent;
 		
 	}
+
+	public void registerStudentForCourse(Student newStudent, Course newCourse) {
+		// TODO Auto-generated method stub
+		
+		newStudent.registerCourse(newCourse);
+		newCourse.addStudent(newStudent);
+	}
 	
 }
