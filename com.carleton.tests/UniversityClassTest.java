@@ -86,7 +86,7 @@ public class UniversityClassTest {
 	
 	
 	@Test
-	public void registerSutdentForCourse_givenaCourseAndStudent() {
+	public void registerSutdentForCourse_givenaCourseAndStudent_withinCapSizeLimt() {
 		
 		//assumption : the student is created through the procedure createCourse 
 		//             the course is crreated throguh the procedure of createStudent 
@@ -114,6 +114,49 @@ public class UniversityClassTest {
 		assertEquals(expectedStudentName,actualStudentName);
 
 	}
+	
+	@Test(expected = IllegalStateException.class)
+	public void registerSutdentForCourse_givenaCourseAndStudent_capSizeIsReached() {
+		
+		//assumption : the student is created through the procedure createCourse 
+		//             the course is created throguh the procedure of createStudent 
+		// new course : no students registered yet   : 0/26
+		Course newCourse = universityUnderTest.creatCourse("OOD",26);
+		// new student
+		Student newStudent= universityUnderTest.creatStudent("Ahmed",18,false);
+		//register new students to the course till the limit is reched
+		for (int i=0; i<newCourse.getCapSize();i++){
+			Student tempStudent= universityUnderTest.creatStudent("Ahmed",i+1,false);
+			universityUnderTest.registerStudentForCourse(tempStudent,newCourse);
+		}
+		// the number of students in the course should be now 26
+	//	assertEquals(26,newCourse.Students().size());
+		// new create a student
+		Student newStudent_2= universityUnderTest.creatStudent("Mer",20,false);
+		// this student should not be accepted since the capsize has been reached
+		universityUnderTest.registerStudentForCourse(newStudent,newCourse);
+		
+		
+
+
+
+	}
+	// ensure that no two identical students can register for the same course
+	@Test(expected = IllegalArgumentException.class)
+	public void registerSutdentForCourse_givenCourseAndStudent_returningException() {
+		
+		//assumption : the student is created through the procedure createCourse 
+				//             the course is created throguh the procedure of createStudent 
+				// new course : no students registered yet   : 0/26
+				Course newCourse = universityUnderTest.creatCourse("OOD",26);
+				// new student
+				Student newStudent= universityUnderTest.creatStudent("Ahmed",18,false);
+				// this is not allowed!
+				for (int i=0; i<newCourse.getCapSize();i++){
+					universityUnderTest.registerStudentForCourse(newStudent,newCourse);
+				}
+	}
+	
 	
 	@Test
 	public void cancelCourse_derigsterStudentsForThatCourse() {
@@ -156,7 +199,9 @@ public class UniversityClassTest {
 	
 	@After
 	public void tearDown(){
-		universityUnderTest.courses().clear();
+		universityUnderTest.courses().clear();	
+		universityUnderTest.students().clear();
+
 		
 	}
 	

@@ -75,9 +75,22 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 
 	public void registerStudentForCourse(Student newStudent, Course newCourse) {
 		// TODO Auto-generated method stub
-		if (newStudent!= null && newCourse!=null){
+		int numberOfSudentsInNewCourse =0;
+		if (newCourse!=null){
+			numberOfSudentsInNewCourse= newCourse.Students().size();  
+		}
+		if (newCourse.Students().contains(newStudent)){
+	        throw new IllegalArgumentException(newStudent.getName()+
+	        		" is Already registred in this course!");
+
+		}
+		else if (newStudent!= null && newCourse!=null && 
+				numberOfSudentsInNewCourse <newCourse.getCapSize()){
 			newStudent.registerCourse(newCourse);
 			newCourse.addStudent(newStudent);
+		} else {
+	        throw new IllegalStateException("Max Number of student is reached!");
+
 		}
 	}
 
