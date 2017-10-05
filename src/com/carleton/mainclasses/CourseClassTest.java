@@ -99,15 +99,16 @@ public class CourseClassTest {
 		int actualWeight = courseUnderTest.WeightOfAssignment(0);
 		assertEquals(expectedWeight,actualWeight);
 	}
-	/*
+	
 	@Test
-	public void weightOfAssignment_OneAssignement(){
+	public void weightOfAssignment_OneAssignementNoPorjectNoFinal(){
 		//assignemnt number is from 0 to 5
+		Course tempCourse = new Course("Object Oriented",true,0,1,false,27);
 		// test 1 if it the parameter is 0 then the function should return 0
-		int expectedWeight = 0;
-		int actualWeight = courseUnderTest.WeightOfAssignment(0);
+		int expectedWeight = 100;
+		int actualWeight = courseUnderTest.WeightOfAssignment(1);
 		assertEquals(expectedWeight,actualWeight);
-	} */
+	} 
 	@Test
 	public void weightOfMidterm_NoMidterm_returingZero(){
 		//midtermNum number is from 0 to 2

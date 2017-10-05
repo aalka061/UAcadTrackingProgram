@@ -148,7 +148,10 @@ public class Course {
 	}
 	public int WeightOfAssignment(int assignmentNumber) {
 		// TODO Auto-generated method stub
+		if(assignmentNumber==0){
 			return 0;
+		} 
+		return 100;
 		
 		
 	}
@@ -172,6 +175,12 @@ public class Course {
 		}
 		return false;
 	}
+	
+	public boolean hasProject() {
+		return false; 
+	}
+	
+	
 
 
 }
