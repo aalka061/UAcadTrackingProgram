@@ -10,12 +10,15 @@ public class Course {
 	private boolean enforcePrereqs=false;
 	private int numberOfMidterms;     //Between 0-2
 	private int numberOfAssignments;  //Between 0-5
-	private boolean hasAFinal = false;
+	private boolean hasFinal = false;
 	private int capSize;
 	private boolean isFull;
 	public static int instances =0;
 	private ArrayList<Student> studentList;
-		
+	private int assignments[];
+	private int midterms[];
+	private final static int FULL_GRADE = 100;
+
 	
 	// Default constructor. Populates course name, number of students with defaults
 	public Course (){
@@ -35,15 +38,18 @@ public class Course {
 			  throw new IllegalArgumentException();
 		} else {
 			this.numberOfMidterms = numberOfMidterms;
+			midterms = new int[numberOfMidterms];
 		}
 		
 		if(numberOfAssignments<0 || numberOfAssignments>5){
 			  throw new IllegalArgumentException();
 		} else {
 			this.numberOfAssignments = numberOfAssignments;
+			assignments = new int[numberOfAssignments];
+
 		}
 		
-		this.hasAFinal=hasAFinal;
+		this.hasFinal=hasAFinal;
 		
 		if(capSize<25){
 			  throw new IllegalArgumentException();
@@ -52,7 +58,6 @@ public class Course {
 		}
 		studentList = new ArrayList<Student>();
 		isFull = false;
-
 	}
 	
 	public Course(String title,int myCode) {
@@ -98,7 +103,7 @@ public class Course {
 	}
 	
 	public void setHasAFinal(boolean hasAFinal) {
-		this.hasAFinal = hasAFinal;
+		this.hasFinal = hasAFinal;
 	}
 		
 	
@@ -146,12 +151,18 @@ public class Course {
 		// TODO Auto-generated method stub
 		
 	}
-	public int WeightOfAssignment(int assignmentNumber) {
+	public int weightOfAssignment(int assignmentNumber) {
 		// TODO Auto-generated method stub
 		if(assignmentNumber==0){
 			return 0;
-		} 
-		return 100;
+		} else if (!hasFinal && numberOfMidterms==0
+				&& !hasProject()){
+			for(int i=0; i<assignments.length;i++) {
+				assignments[i] = FULL_GRADE/assignments.length;
+			}
+		}
+		return assignments[assignmentNumber-1];
+
 		
 		
 	}
@@ -162,7 +173,7 @@ public class Course {
 	
 	public int WeightOfFinal() {
 		// TODO Auto-generated method stub
-		if (hasAFinal==false)
+		if (hasFinal==false)
 			return 0;
 		else 
 			return 50;

@@ -96,7 +96,7 @@ public class CourseClassTest {
 		//assignemnt number is from 0 to 5
 		// test 1 if it the parameter is 0 then the function should return 0
 		int expectedWeight = 0;
-		int actualWeight = courseUnderTest.WeightOfAssignment(0);
+		int actualWeight = courseUnderTest.weightOfAssignment(0);
 		assertEquals(expectedWeight,actualWeight);
 	}
 	
@@ -106,7 +106,7 @@ public class CourseClassTest {
 		Course tempCourse = new Course("Object Oriented",true,0,1,false,27);
 		// test 1 if it the parameter is 0 then the function should return 0
 		int expectedWeight = 100;
-		int actualWeight = courseUnderTest.WeightOfAssignment(1);
+		int actualWeight = tempCourse.weightOfAssignment(1);
 		assertEquals(expectedWeight,actualWeight);
 	} 
 	@Test
