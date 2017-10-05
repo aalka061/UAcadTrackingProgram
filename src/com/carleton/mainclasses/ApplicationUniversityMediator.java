@@ -82,9 +82,15 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 	}
 
 	public void cancelCourse(Course newCourse) {
+
 		// TODO Auto-generated method stub
 		if (newCourse != null){
+			List<Student> listOfCourseStudent=newCourse.Students(); 
+			for (Student st : listOfCourseStudent){
+				st.getCurrentCourses().remove(newCourse);
+			}
 			newCourse.Students().clear();
+			
 		} else {
 	        throw new IllegalArgumentException("newCourse was null");
 		}

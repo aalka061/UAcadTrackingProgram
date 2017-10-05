@@ -116,16 +116,20 @@ public class UniversityClassTest {
 	}
 	
 	@Test
-	public void cancelCourse_deletingCourseAndDerigsterStudents() {
+	public void cancelCourse_derigsterStudentsForThatCourse() {
 		
 		// create new course 
 		Course newCourse = universityUnderTest.creatCourse("OOD",50);
+		Course newCourse_2 = universityUnderTest.creatCourse("AdHocNetworking",26);
 		// create 2 students 
 		Student newStudent_1= universityUnderTest.creatStudent("Ahmed",18,false);
 		Student newStudent_2= universityUnderTest.creatStudent("Abraham",20,true);
+		
 		// register both students to the new course
 		universityUnderTest.registerStudentForCourse(newStudent_1,newCourse);
 		universityUnderTest.registerStudentForCourse(newStudent_2,newCourse);
+		universityUnderTest.registerStudentForCourse(newStudent_2,newCourse_2);
+
 		
 		// list of students in the newCourse 
 		List<Student> studentsOfnewCourse = newCourse.Students();
@@ -133,13 +137,19 @@ public class UniversityClassTest {
 		assertEquals(2, studentsOfnewCourse.size());
 		// cancel the course 
 		universityUnderTest.cancelCourse(newCourse);
-		// all students should be deregistered
-		assertTrue(studentsOfnewCourse.isEmpty()); 
-
 		
-
+		// all students should be deregistered
+		assertTrue(studentsOfnewCourse.isEmpty());
+		
+		// the course should be deleted from the current courses of newStudent_1 
+		// and newStudent_2
+		assertTrue(newStudent_1.getCurrentCourses().isEmpty());
+		assertEquals(newCourse_2.getCapSize(), newStudent_2.getCurrentCourses().get(0).getCapSize());
 	}
+	
 
+
+	
 	
 	
 	

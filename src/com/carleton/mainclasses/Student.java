@@ -29,8 +29,8 @@ public class Student {
 		this.age=age;
 		this.isFullTime=isFullTime;
 		this.isCreated = true;
-		setCurrentCourses(new ArrayList<Course>());
-	}
+		currentCourses = new ArrayList<Course>();
+		}
 	public String getName() {
 		// TODO Auto-generated method stub
 		return name;
