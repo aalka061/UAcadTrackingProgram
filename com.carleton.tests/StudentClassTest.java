@@ -57,12 +57,7 @@ public class StudentClassTest {
 
 	}
 	
-	@Test
-	public void isCreated_testingIfstudentIsCreatedByUniversity_returningTrue(){
-		// Parameterized constructor 
-		boolean isCreated= studentUnderTestParametrized.isCreated();
-		assertTrue(isCreated);
-	}
+	
 	
 	@Test
 	public void currentCourses_thecurrentCoursesRegisteredIn_returningListOfCourses(){
@@ -75,6 +70,7 @@ public class StudentClassTest {
 		assertEquals(expectedTitle,actualTitle);
 
 	}
+	
 	
 	
 	

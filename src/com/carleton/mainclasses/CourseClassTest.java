@@ -155,6 +155,20 @@ public class CourseClassTest {
 		assertEquals(expectedWeight,actualWeight);
 	}
 	
+	@Test
+	public void isFull_isNumberOfStudentsAtTheCourseReachedTheLimt_returningTrue(){
+		//midtermNum number is from 0 to 2
+		//if the parameter is 0 then the function should return 0
+		Course newCourseUnderTest = new Course("OOD",false,0,1,true,27);
+		for (int i=0; i<newCourseUnderTest.getCapSize();i++){
+			newCourseUnderTest.addStudent(new Student("Ahmed",i+5, false));
+		}
+		assertTrue(newCourseUnderTest.isFull());
+	}
+	
+	
+	
+	
 	
 	 
 	

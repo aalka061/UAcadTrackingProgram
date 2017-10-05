@@ -12,6 +12,7 @@ public class Course {
 	private int numberOfAssignments;  //Between 0-5
 	private boolean hasAFinal = false;
 	private int capSize;
+	private boolean isFull;
 	public static int instances =0;
 	private ArrayList<Student> studentList;
 		
@@ -50,6 +51,7 @@ public class Course {
 			this.capSize=capSize;
 		}
 		studentList = new ArrayList<Student>();
+		isFull = false;
 
 	}
 	
@@ -162,6 +164,13 @@ public class Course {
 		else 
 			return 50;
 		
+	}
+	
+	public boolean isFull(){
+		if(capSize==studentList.size()){
+			return true;
+		}
+		return false;
 	}
 
 

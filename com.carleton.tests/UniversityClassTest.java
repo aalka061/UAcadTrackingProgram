@@ -78,10 +78,15 @@ public class UniversityClassTest {
 		int age = 20;
 		boolean isFullTime=true;
 		String name = "Michelle";
-		universityUnderTest.creatStudent(name,age,isFullTime);
+		
+		Student newStudent= universityUnderTest.creatStudent(name,age,isFullTime);
+		
 		int actualNumberOfStudents= universityUnderTest.students().size();
 		int expectedNumberOfStudents=1;
 		assertEquals(expectedNumberOfStudents,actualNumberOfStudents);
+		
+		//ensure that isCreated Method is set to true now sinc
+		assertTrue(newStudent.isCreated());
 	}
 	
 	
@@ -202,9 +207,10 @@ public class UniversityClassTest {
 		String actualTitleOfRemainingCourse = universityUnderTest.courses().get(0).title();
 		assertEquals(expectedTitleOfRemainingCourse, actualTitleOfRemainingCourse);
 		
-		
 	
 	}
+	
+	
 	
 	
 

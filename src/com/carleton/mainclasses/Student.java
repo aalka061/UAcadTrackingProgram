@@ -28,7 +28,7 @@ public class Student {
 		this.name=name;
 		this.age=age;
 		this.isFullTime=isFullTime;
-		this.isCreated = true;
+		this.isCreated = false;
 		currentCourses = new ArrayList<Course>();
 		}
 	public String getName() {
@@ -65,6 +65,12 @@ public class Student {
 		// TODO Auto-generated method stub
 		return isCreated;
 	}
+	
+	public void setIsCreated(boolean isCreatedNew) {
+		// TODO Auto-generated method stub
+		isCreated = isCreatedNew;
+	}
+
 
 	public ArrayList<Course> getCurrentCourses() {
 		return currentCourses;

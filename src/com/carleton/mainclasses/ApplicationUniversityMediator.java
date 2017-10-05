@@ -69,6 +69,7 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		// TODO Auto-generated method stub
 		Student newStudent= new Student(name,age,isFullTime);
 		studentsOfUniversity.add(newStudent);
+		newStudent.setIsCreated(true);
 		return newStudent;
 		
 	}
@@ -101,6 +102,7 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 			List<Student> listOfCourseStudent=newCourse.Students(); 
 			for (Student st : listOfCourseStudent){
 				st.getCurrentCourses().remove(newCourse);
+				
 			}
 			newCourse.Students().clear();
 			
