@@ -108,6 +108,23 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 	        throw new IllegalArgumentException("newCourse was null");
 		}
 	}
+
+	public void destroy(Course newCourse) {
+		// TODO Auto-generated method stub
+		if(newCourse!=null){
+			if(coursesOfUniversity.contains(newCourse)){
+				coursesOfUniversity.remove(newCourse);
+				cancelCourse(newCourse);
+			} else {
+		        throw new IllegalArgumentException("the course is not listed");
+
+			}
+		} else {
+	        throw new IllegalArgumentException("the course was null");
+
+		}
+		
+	}
 	
 	
 	

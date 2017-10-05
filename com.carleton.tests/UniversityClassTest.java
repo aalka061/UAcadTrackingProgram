@@ -136,10 +136,6 @@ public class UniversityClassTest {
 		// this student should not be accepted since the capsize has been reached
 		universityUnderTest.registerStudentForCourse(newStudent,newCourse);
 		
-		
-
-
-
 	}
 	// ensure that no two identical students can register for the same course
 	@Test(expected = IllegalArgumentException.class)
@@ -156,7 +152,6 @@ public class UniversityClassTest {
 					universityUnderTest.registerStudentForCourse(newStudent,newCourse);
 				}
 	}
-	
 	
 	@Test
 	public void cancelCourse_derigsterStudentsForThatCourse() {
@@ -189,6 +184,28 @@ public class UniversityClassTest {
 		assertTrue(newStudent_1.getCurrentCourses().isEmpty());
 		assertEquals(newCourse_2.getCapSize(), newStudent_2.getCurrentCourses().get(0).getCapSize());
 	}
+	
+	
+	@Test
+	public void destroyCourse_deleteCourseFromUniveristyCourses_void() {
+		
+		// create new courses 
+		Course newCourse = universityUnderTest.creatCourse("OOD",50);
+		Course newCourse_2 = universityUnderTest.creatCourse("AdHocNetworking",26);
+		
+		// destory course 
+		universityUnderTest.destroy(newCourse);
+		// course should be eliminated from the univeristyCourses
+		assertTrue(universityUnderTest.courses().size()==1);
+		
+		String expectedTitleOfRemainingCourse = newCourse_2.title();
+		String actualTitleOfRemainingCourse = universityUnderTest.courses().get(0).title();
+		assertEquals(expectedTitleOfRemainingCourse, actualTitleOfRemainingCourse);
+		
+		
+	
+	}
+	
 	
 
 
