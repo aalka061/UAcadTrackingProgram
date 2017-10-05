@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -112,6 +114,35 @@ public class UniversityClassTest {
 		assertEquals(expectedStudentName,actualStudentName);
 
 	}
+	
+	@Test
+	public void cancelCourse_deletingCourseAndDerigsterStudents() {
+		
+		// create new course 
+		Course newCourse = universityUnderTest.creatCourse("OOD",50);
+		// create 2 students 
+		Student newStudent_1= universityUnderTest.creatStudent("Ahmed",18,false);
+		Student newStudent_2= universityUnderTest.creatStudent("Abraham",20,true);
+		// register both students to the new course
+		universityUnderTest.registerStudentForCourse(newStudent_1,newCourse);
+		universityUnderTest.registerStudentForCourse(newStudent_2,newCourse);
+		
+		// list of students in the newCourse 
+		List<Student> studentsOfnewCourse = newCourse.Students();
+		// ensure that newCourse is added to the courses list 
+		assertEquals(2, studentsOfnewCourse.size());
+		// cancel the course 
+		universityUnderTest.cancelCourse(newCourse);
+		// all students should be deregistered
+		assertTrue(studentsOfnewCourse.isEmpty()); 
+
+		
+
+	}
+
+	
+	
+	
 	
 	@After
 	public void tearDown(){

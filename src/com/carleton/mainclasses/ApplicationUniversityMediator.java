@@ -75,9 +75,21 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 
 	public void registerStudentForCourse(Student newStudent, Course newCourse) {
 		// TODO Auto-generated method stub
-		
-		newStudent.registerCourse(newCourse);
-		newCourse.addStudent(newStudent);
+		if (newStudent!= null && newCourse!=null){
+			newStudent.registerCourse(newCourse);
+			newCourse.addStudent(newStudent);
+		}
 	}
+
+	public void cancelCourse(Course newCourse) {
+		// TODO Auto-generated method stub
+		if (newCourse != null){
+			newCourse.Students().clear();
+		} else {
+	        throw new IllegalArgumentException("newCourse was null");
+		}
+	}
+	
+	
 	
 }
