@@ -1,4 +1,4 @@
-package com.carleton.mainclasses;
+package server.logic.model;
 
 public class ProjectCourse extends Course {
 

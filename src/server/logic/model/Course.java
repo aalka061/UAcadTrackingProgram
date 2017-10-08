@@ -1,4 +1,4 @@
-package com.carleton.mainclasses;
+package server.logic.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -152,7 +152,6 @@ public class Course {
 		
 	}
 	public int weightOfAssignment(int assignmentNumber) {
-		// TODO Auto-generated method stub
 		if(assignmentNumber==0){
 			return 0;
 		} else if (!hasFinal && numberOfMidterms==0
@@ -165,6 +164,10 @@ public class Course {
 
 		
 		
+	}
+	
+	public void setAssignmentWeight(int assignmentNumber, int grade){
+		assignments[assignmentNumber-1] = grade;
 	}
 	public int WeightOfMidterm(int midtermNum) {
 		// TODO Auto-generated method stub

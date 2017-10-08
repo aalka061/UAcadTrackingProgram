@@ -1,12 +1,17 @@
+package server.logic.tests;
+
 import static org.junit.Assert.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.carleton.mainclasses.Course;
-import com.carleton.mainclasses.Student;
+import server.logic.model.Course;
+import server.logic.model.Student;
 
-public class StudentClassTest {
+
+
+public class StudentTests {
 
 	
 	Student studentUnderTestDefault;	
@@ -70,6 +75,12 @@ public class StudentClassTest {
 		assertEquals(expectedTitle,actualTitle);
 
 	}
+	
+	@After
+	public void teardown() throws Exception {
+		
+	}
+
 	
 	
 	

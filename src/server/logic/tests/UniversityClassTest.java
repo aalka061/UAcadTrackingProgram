@@ -1,3 +1,5 @@
+package server.logic.tests;
+
 import static org.junit.Assert.*;
 
 import java.util.List;
@@ -6,10 +8,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.carleton.mainclasses.ApplicationUniversityMediator;
-import com.carleton.mainclasses.Course;
-import com.carleton.mainclasses.Student;
-import com.carleton.mainclasses.UniversityMediator;
+import server.logic.model.ApplicationUniversityMediator;
+import server.logic.model.Course;
+import server.logic.model.Student;
+
 
 public class UniversityClassTest {
 	

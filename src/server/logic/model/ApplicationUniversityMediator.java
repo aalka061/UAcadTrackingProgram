@@ -1,4 +1,4 @@
-package com.carleton.mainclasses;
+package server.logic.model;
 
 import java.util.ArrayList;
 import java.util.List;

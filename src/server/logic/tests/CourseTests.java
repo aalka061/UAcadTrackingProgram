@@ -1,4 +1,4 @@
-package com.carleton.mainclasses;
+package server.logic.tests;
 
 import static org.junit.Assert.*;
 
@@ -9,7 +9,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CourseClassTest {
+import server.logic.model.Course;
+import server.logic.model.Student;
+
+public class CourseTests {
 	Course courseUnderTest;
 
 	@Before
