@@ -6,7 +6,7 @@ import java.util.List;
 public class Course {
 	
 	private String title;
-	private int code; 
+	private int myCode; 
 	private boolean enforcePrereqs=false;
 	private int numberOfMidterms;     //Between 0-2
 	private int numberOfAssignments;  //Between 0-5
@@ -20,29 +20,21 @@ public class Course {
 	private final static int FULL_GRADE = 100;
 
 	
-	// Default constructor. Populates course name, number of students with defaults
-	public Course (){
-		instances++;
-		this.title = "Not Set";
-		this.numberOfMidterms=0;
-		this.capSize=0;
-		this.code=10000;
-		
-	}
+	
 	public Course (String title,boolean enforcePrereqs, int numberOfMidterms, int numberOfAssignments, 
-		boolean hasAFinal, int capSize){
+		boolean hasAFinal, int capSize, int code ){
 		
 		this.title = title;
 		this.enforcePrereqs= enforcePrereqs;
 		if(numberOfMidterms<0 || numberOfMidterms>2){
-			  throw new IllegalArgumentException();
+			  throw new IllegalArgumentException("Number of midterms must be btw 0-2");
 		} else {
 			this.numberOfMidterms = numberOfMidterms;
 			midterms = new int[numberOfMidterms];
 		}
 		
 		if(numberOfAssignments<0 || numberOfAssignments>5){
-			  throw new IllegalArgumentException();
+			  throw new IllegalArgumentException("Number of assignements must be btw 0-5");
 		} else {
 			this.numberOfAssignments = numberOfAssignments;
 			assignments = new int[numberOfAssignments];
@@ -52,32 +44,28 @@ public class Course {
 		this.hasFinal=hasAFinal;
 		
 		if(capSize<25){
-			  throw new IllegalArgumentException();
+			  throw new IllegalArgumentException("cap size must be more then 25");
 		} else {
 			this.capSize=capSize;
 		}
-		studentList = new ArrayList<Student>();
-		isFull = false;
-	}
-	
-	public Course(String title,int myCode) {
-		this.title=title; 
-		// first 2 digits represents dept code and the the last the corse code
-		if(!checkCode(myCode)){
+		if(!checkCode(code)){
 			throw new IllegalArgumentException("Code is invalid");
 			
+		} else {
+			this.myCode = code; 
 		}
-		this.code = myCode; 
-		
 		studentList = new ArrayList<Student>();
+		isFull = false;
 		
 	}
 	
+	
+	
 	public void setCode(int code) {
-		this.code = code;
+		this.myCode = code;
 	}
 	public int getCode() {
-		return code;
+		return myCode;
 	}
 	
 	public int getCapSize() {
@@ -169,12 +157,12 @@ public class Course {
 	public void setAssignmentWeight(int assignmentNumber, int grade){
 		assignments[assignmentNumber-1] = grade;
 	}
-	public int WeightOfMidterm(int midtermNum) {
+	public int weightOfMidterm(int midtermNum) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 	
-	public int WeightOfFinal() {
+	public int weightOfFinal() {
 		// TODO Auto-generated method stub
 		if (hasFinal==false)
 			return 0;
