@@ -74,6 +74,20 @@ public class UniversityClassTest {
 		int expectedNumberOfCourses=1;
 		assertEquals(actualNumberOfCourses,expectedNumberOfCourses);
 	}
+	//creating two course and ensure that their code is unique 
+	@Test
+	public void createCourse_creatingTwoCourses_returingDifferentCodes() {
+		
+		int cap = 60;
+		
+		Course tempCourse_1 = universityUnderTest.creatCourse("object oriented Development",cap);
+		Course tempCourse_2= universityUnderTest.creatCourse("networking", cap);
+		assertTrue(tempCourse_1.getCode()!= tempCourse_2.getCode());
+		assertEquals(100000,tempCourse_1.getCode());
+		assertEquals(100001,tempCourse_2.getCode());
+		
+	
+	}
 	
 	@Test
 	public void createStudent_returingStudnetThatIsCreated() {

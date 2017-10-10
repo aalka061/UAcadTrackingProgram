@@ -17,6 +17,7 @@ public class Course {
 	private ArrayList<Student> studentList;
 	private int assignments[];
 	private int midterms[];
+	private boolean hasProject;
 	private final static int FULL_GRADE = 100;
 
 	

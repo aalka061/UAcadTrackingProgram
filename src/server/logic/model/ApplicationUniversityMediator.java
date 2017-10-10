@@ -47,8 +47,18 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 
 	public Course creatCourse(String string, int cap) {
 		// TODO Auto-generated method stub
-		
-		Course newCourse = new Course ("OOD",false,0,0,true,cap);
+		//public Course (String title,boolean enforcePrereqs, int numberOfMidterms, int numberOfAssignments, 
+		//boolean hasAFinal, int capSize, int code )
+		int firstCourseCode = 100000;
+		int currentCourseCode=0;
+		if (coursesOfUniversity != null) {
+			currentCourseCode = firstCourseCode+coursesOfUniversity.size();
+		} else {
+			currentCourseCode = firstCourseCode;
+		}
+		System.out.println(currentCourseCode);
+
+		Course newCourse = new Course ("OOD",false,0,0,true,cap,currentCourseCode );
 		coursesOfUniversity.add(newCourse);
 		return newCourse;
 	}

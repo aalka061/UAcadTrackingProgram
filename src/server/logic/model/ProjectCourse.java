@@ -5,10 +5,9 @@ public class ProjectCourse extends Course {
 	private int weightOfProject;
 	
 	public ProjectCourse(String title,boolean enforcePrereqs, int numberOfMidterms, int numberOfAssignments, 
-			boolean hasAFinal, int capSize) {
+			boolean hasAFinal, int capSize, int myCode) {
 		
-		super(title,enforcePrereqs,numberOfMidterms,numberOfAssignments,hasAFinal,capSize);
-		
+		super(title,enforcePrereqs,numberOfMidterms,numberOfAssignments,hasAFinal,capSize,myCode);
 	} 
 	
 	public boolean hasProject(){
