@@ -76,7 +76,7 @@ public class UniversityClassTest {
 	}
 	//creating two course and ensure that their code is unique 
 	@Test
-	public void createCourse_creatingTwoCourses_returingDifferentCodes() {
+	public void createCourse_creatingTwoCourses_returningDifferentCodes() {
 		
 		int cap = 60;
 		
@@ -88,6 +88,28 @@ public class UniversityClassTest {
 		
 	
 	}
+	@Test
+	public void createCourse_returingCourseThatIsCreated() {
+		
+		int cap = 60;
+		universityUnderTest.creatCourse("object oriented Development",cap);
+		int actualNumberOfCourses= universityUnderTest.courses().size();
+		int expectedNumberOfCourses=1;
+		assertEquals(actualNumberOfCourses,expectedNumberOfCourses);
+	}
+	//creating two course and ensure that their code is unique 
+	@Test
+	public void createCourse_OneCourseCreated_returingSumOfCourseComponents() {
+		
+		int cap = 60;
+		
+		Course tempCourse = universityUnderTest.creatCourse("object oriented Development",cap);
+	
+		assertEquals(100,tempCourse.getSumOfCourseElements());
+		
+	
+	}
+	
 	
 	@Test
 	public void createStudent_returingStudnetThatIsCreated() {
