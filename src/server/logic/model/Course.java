@@ -256,25 +256,39 @@ public void setWeightsOfaCourse(){
 
 		} else if (!isHasFinal() && getNumberOfMidterms()>0 && 
 				getNumberOfAssignments()>0){
-
-			int midsWeight = (randInt(0,100)*2)%100; // get only even numbers
-			int weightOfAs = Course.FULL_GRADE-midsWeight;
+		
 			
-			for (int i=0; i<getMidterms().length;i++){
-				int grade = midsWeight/getMidterms().length;
-				setMidtermWeight(i+1, grade);
-				
+			if (getNumberOfMidterms()==2){
+				setMidtermWeight(1,20);
+				setMidtermWeight(2,20);
+				int gradeA = (FULL_GRADE-40)/getNumberOfAssignments();
+				for (int i=0; i<getAssignments().length;i++){
+					setAssignmentWeight(i+1, gradeA);
+				}
+			} else if(getNumberOfMidterms()==1){
+				setMidtermWeight(1,40);
+				int gradeA = (FULL_GRADE-40)/getNumberOfAssignments();
+				for (int i=0; i<getAssignments().length;i++){
+					setAssignmentWeight(i+1, gradeA);
+				}
 			}
-			for (int i=0; i<getAssignments().length;i++){
-				int grade = weightOfAs/getAssignments().length;
-				setAssignmentWeight(i+1, grade);
-			}
-
-		 
 			
+			// no final and no mids and some assignements 
 		} else if (!isHasFinal() && getNumberOfMidterms()==0 && getNumberOfAssignments()>0){
 			
-			setAssignmentWeight(1, 100);
+			if (getNumberOfAssignments()==3){
+				setAssignmentWeight(1, 33);
+				setAssignmentWeight(2, 33);
+				setAssignmentWeight(3, 34);
+			} else {
+				int grade =FULL_GRADE/getNumberOfAssignments();
+				for (int i=0; i<getAssignments().length;i++){
+					setAssignmentWeight(i+1, grade);
+				}
+			}
+			
+		} else if (isHasFinal() && getNumberOfMidterms()==0 && getNumberOfAssignments()==0){
+			setFinalGrade(100);
 		}
 		System.out.println(getNumberOfMidterms() +" "+getNumberOfAssignments() + " "+ getCode());
 

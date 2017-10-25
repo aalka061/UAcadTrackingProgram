@@ -13,7 +13,7 @@ public class Student {
 	private ArrayList<Course> currentCourses;
 	
 	public Student (){
-		//this.number=0;
+		this.studentNumber=0;
 		this.name="UnKnown";
 		this.age=17;
 		

@@ -64,7 +64,7 @@ public class CourseTests {
 		int expectedNumber=0;
 		int expectedAge=17;
 		assertEquals(expectedName,courseUnderTest.Students().get(0).getName());
-		assertEquals(expectedNumber,courseUnderTest.Students().get(0).getNumber());
+		assertEquals(expectedNumber,courseUnderTest.Students().get(0).studentNumber());
 		assertEquals(expectedAge,courseUnderTest.Students().get(0).getAge());
 		
 		// test 3 - check if specific student is added using parameterized constructor 
@@ -73,7 +73,7 @@ public class CourseTests {
 		expectedNumber=1;
 		expectedAge=19;
 		assertEquals(expectedName,courseUnderTest.Students().get(2).getName());
-		assertEquals(expectedNumber,courseUnderTest.Students().get(2).getNumber());
+		assertEquals(expectedNumber,courseUnderTest.Students().get(2).studentNumber());
 		assertEquals(expectedAge,courseUnderTest.Students().get(2).getAge());		
 	}
 	
@@ -118,6 +118,17 @@ public class CourseTests {
 		int actualWeight = tempCourse.weightOfAssignment(1);
 		assertEquals(expectedWeight,actualWeight);
 	} 
+	
+	@Test
+	public void weightOfAssignment_ThreeAssignementsNoPorjectNoFinalNoMids(){
+		//assignemnt number is from 0 to 5
+		Course tempCourse = new Course("Object Oriented",true,0,3,false,27,110111);
+		tempCourse.setWeightsOfaCourse();
+		// test 1 if it the parameter is 0 then the function should return 0
+		int expectedWeight_A1 = 33;
+		int actualWeight = tempCourse.weightOfAssignment(1);
+		assertEquals(expectedWeight_A1,actualWeight);
+	} 
 	@Test
 	public void weightOfMidterm_NoMidterm_returingZero(){
 		//midtermNum number is from 0 to 2
@@ -128,6 +139,17 @@ public class CourseTests {
 		int actualWeight = courseUnderTest.weightOfMidterm(0);
 		assertEquals(expectedWeight,actualWeight);
 	}
+	
+	@Test
+	public void sumCourseElements_someMidtermsSomeAsNoFinal_returningOneHundered(){
+		//assignemnt number is from 0 to 5
+		Course tempCourse = new Course("Object Oriented",true,2,3,false,27,110111);
+		tempCourse.setWeightsOfaCourse();
+		
+		int expectedWeight =100;
+		int actualWeight =  tempCourse.getSumOfCourseElements();
+		assertEquals(expectedWeight,actualWeight);
+	} 
 	
 	/*
 	@Test
@@ -160,16 +182,18 @@ public class CourseTests {
 	}
 	
 	@Test
-	public void weightOfFinal_hasFinalIsTrue_returningFiftyForNow(){
+	public void weightOfFinal_hasFinalNoAssignementNoMid_returningOneHundared(){
 		//midtermNum number is from 0 to 2
 		//if the parameter is 0 then the function should return 0
 		courseUnderTest= new Course("OOD",false,0,1,true,26,110111); 
-
-		int expectedWeight = 50;
-		courseUnderTest.setHasAFinal(true);
+		courseUnderTest.setNumberOfAssignments(0);
+		courseUnderTest.setNumberOfMidterms(0);
+		courseUnderTest.setWeightsOfaCourse();
+		int expectedWeight = 100;
 		int actualWeight = courseUnderTest.weightOfFinal();
 		assertEquals(expectedWeight,actualWeight);
 	}
+	
 	
 	@Test
 	public void isFull_isNumberOfStudentsAtTheCourseReachedTheLimt_returningTrue(){
