@@ -225,6 +225,16 @@ public void setNumberOfAssignments(int numberOfAssignments) {
 public void setWeightsOfaCourse(){
 		
 	// case 1 : final + midterms+ assignements 
+	//final , 2 mids, 3 As  : 40, 30, 30
+	// final, 2 mids, 4 As  : 50 ,30, 20
+	// final, 2 mids  5 As  : 40 ,30, 30
+	// final, 2 mids, 2 As  : 40 ,30, 30
+	// final, 2 mids, 1 As  : 40 ,30, 30
+	// final, 1 mids, 5 AS  : 40, 30, 30
+	// final, 1 mids, 4 AS  : 50  30, 20
+	// final, 1 mids, 3 As  : 40, 30, 30
+	// final, 1 mid, 2 As   : 40, 30, 30
+	// final, 1 mid, 1 As   : 40, 30, 30
 		if (isHasFinal() && getNumberOfMidterms()>0 && 
 				getNumberOfAssignments()>0){
 			int sum=0;
@@ -233,22 +243,23 @@ public void setWeightsOfaCourse(){
 			finalGrade =finalWeight;
 			int midAndAsWeight = (Course.FULL_GRADE-finalWeight);
 			int midWeight =0;
-			if ((midAndAsWeight/2)%2==0) {
-				midWeight = (midAndAsWeight/2);
+			int midTotalWeight = 30;
+			int AsTotalWeight=30;
+
+			if(getNumberOfAssignments()!=4){
+				finalGrade=40;
 			} else {
-				midWeight = (midAndAsWeight/2)+1;
+				finalGrade=50;
+				AsTotalWeight=20;	
 			}
-		
 			
-			int assignWeight=Course.FULL_GRADE-finalWeight-midWeight;
 			for (int i=0; i<getMidterms().length;i++){
-				int grade = midWeight/getMidterms().length;
-				setMidtermWeight(i+1, grade);
-				
+				int gradeSingleMid = midTotalWeight/getNumberOfMidterms();
+				setMidtermWeight(i+1, gradeSingleMid);
 			}
 			for (int i=0; i<getAssignments().length;i++){
-				int grade = assignWeight/getAssignments().length;
-				setAssignmentWeight(i+1, grade);
+				int gradeSingleA = AsTotalWeight/getNumberOfAssignments();
+				setAssignmentWeight(i+1, gradeSingleA);
 			}
 			
 			

@@ -145,9 +145,31 @@ public class CourseTests {
 		//assignemnt number is from 0 to 5
 		Course tempCourse = new Course("Object Oriented",true,2,3,false,27,110111);
 		tempCourse.setWeightsOfaCourse();
-		
 		int expectedWeight =100;
 		int actualWeight =  tempCourse.getSumOfCourseElements();
+		assertEquals(expectedWeight,actualWeight);
+	} 
+	
+	@Test
+	public void sumCourseElements_someMidtermsSomeAsFinal_returningOneHundered(){
+		//assignemnt number is from 0 to 5
+		Course tempCourse = new Course("Object Oriented",true,2,3,true,27,110111);
+		tempCourse.setWeightsOfaCourse();
+		int expectedWeight =100;
+		int actualWeight =  tempCourse.getSumOfCourseElements();
+		assertEquals(expectedWeight,actualWeight);
+		
+		// 2 Mids, 5 As 
+		Course tempCourse_2 = new Course("Object Oriented",true,2,5,true,27,110111);
+		tempCourse_2.setWeightsOfaCourse();
+		 expectedWeight =100;
+		 actualWeight =  tempCourse_2.getSumOfCourseElements();
+		assertEquals(expectedWeight,actualWeight);
+		// 1M, 5As
+		Course tempCourse_3 = new Course("Object Oriented",true,1,5,true,27,110111);
+		tempCourse_3.setWeightsOfaCourse();
+		 expectedWeight =100;
+		 actualWeight =  tempCourse_3.getSumOfCourseElements();
 		assertEquals(expectedWeight,actualWeight);
 	} 
 	
