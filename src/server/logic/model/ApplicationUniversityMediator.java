@@ -2,10 +2,17 @@ package server.logic.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
+import server.logic.tables.CourseTabel;
+import server.logic.tables.StudentTabel;
+
 
 public class ApplicationUniversityMediator implements UniversityMediator  {
 	
 	private Integer universtityCourses;  
+	private StudentTabel studentList; 
+	private CourseTabel coursesList;
 	
     
 	
@@ -16,6 +23,8 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		} else {
 		this.universtityCourses = universtityCourses;
 		}
+		studentList=StudentTabel.getInstance();
+		coursesList = CourseTabel.getInstance();
 		
 		
 	}
@@ -51,34 +60,54 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		//boolean hasAFinal, int capSize, int code )
 		int firstCourseCode = 100000;
 		int currentCourseCode=0;
-		if (coursesOfUniversity != null) {
-			currentCourseCode = firstCourseCode+coursesOfUniversity.size();
+		if (coursesList != null) {
+			currentCourseCode = firstCourseCode+coursesList.size();
 		} else {
 			currentCourseCode = firstCourseCode;
 		}
-		System.out.println(currentCourseCode);
+		
+		boolean randomBoolean_prereq;
+		boolean randomBoolean_hasFinal=false;
+		int r_numOfMids=0;
+		boolean isAtleastOneGradeElement= false; 
+		int r_numberOfAs=0;
+		
+		while (!isAtleastOneGradeElement){
+			randomBoolean_hasFinal= randomBoolean();
+			r_numberOfAs = randInt(0,5);
+			r_numOfMids = randInt(0,2);
+			isAtleastOneGradeElement=checkOneGradeElement(randomBoolean_hasFinal,
+					r_numberOfAs,r_numOfMids);
+		}
+		
+		randomBoolean_prereq= randomBoolean();
 
-		Course newCourse = new Course ("OOD",false,0,0,true,cap,currentCourseCode );
-		coursesOfUniversity.add(newCourse);
+		
+		//System.out.println(r_numberOfAs+"   "+r_numOfMids);
+		//System.out.println(randomBoolean_hasFinal);
+		Course newCourse = new Course (string,randomBoolean_prereq,r_numOfMids,
+				r_numberOfAs,randomBoolean_hasFinal,cap,currentCourseCode );
+		newCourse.setWeightsOfaCourse();
+		coursesList.add(newCourse);
+		newCourse.setDueDates();
 		return newCourse;
 	}
 
 
 	public List<Course> courses() {
-		
 		// TODO Auto-generated method stub
-		return coursesOfUniversity;
+		return coursesList.courses();
 	}
 
 	public List<Student> students() {
 		// TODO Auto-generated method stub
-		return studentsOfUniversity;
+		return studentList.getStudentList();
 	}
 
 	public Student creatStudent(String name, int age, boolean isFullTime) {
 		// TODO Auto-generated method stub
 		Student newStudent= new Student(name,age,isFullTime);
-		studentsOfUniversity.add(newStudent);
+		studentList.add(newStudent);
 		newStudent.setIsCreated(true);
 		return newStudent;
 		
@@ -93,7 +122,7 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		if (newCourse.Students().contains(newStudent)){
 	        throw new IllegalArgumentException(newStudent.getName()+
 	        		" is Already registred in this course!");
-
+	        
 		}
 		else if (newStudent!= null && newCourse!=null && 
 				numberOfSudentsInNewCourse <newCourse.getCapSize()){
@@ -103,6 +132,38 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 	        throw new IllegalStateException("Max Number of student is reached!");
 
 		}
+	}
+	public Student lookupStudentByStNumber(int studentNumber){
+		
+		Student toBeRegisteredSt = null;
+		for(int i=0;i<studentList.size();i++){
+
+			int  stNumber=studentList.getSutdent(i).studentNumber();
+
+			if(stNumber==studentNumber){
+				toBeRegisteredSt = studentList.getSutdent(i);
+				
+			}
+		}
+		
+		return toBeRegisteredSt;
+		
+	}
+	
+	public Course lookupCourseByCode(int courseCode){
+		
+		Course courseToRegisterIn = null;
+		
+		for(int i=0;i<coursesList.size();i++){
+			
+			int  myCode=coursesList.getCourse(i).getCode();
+			if(myCode==courseCode){
+
+				courseToRegisterIn = coursesList.getCourse(i);
+			}
+		}
+		return courseToRegisterIn;
+		
 	}
 
 	public void cancelCourse(Course newCourse) {
@@ -124,8 +185,8 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 	public void destroy(Course newCourse) {
 		// TODO Auto-generated method stub
 		if(newCourse!=null){
-			if(coursesOfUniversity.contains(newCourse)){
-				coursesOfUniversity.remove(newCourse);
+			if(coursesList.courses().contains(newCourse)){
+				coursesList.courses().remove(newCourse);
 				cancelCourse(newCourse);
 			} else {
 		        throw new IllegalArgumentException("the course is not listed");
@@ -137,6 +198,34 @@ public class ApplicationUniversityMediator implements UniversityMediator  {
 		}
 		
 	}
+	// helper functions
+	// used to generate true or false randomly
+	public boolean randomBoolean(){
+	    return Math.random() < 0.5;
+	}
+	// used to generate a number between min and max 
+	public int randInt(int min, int max) {
+
+	    // Usually this can be a field rather than a method variable
+	    Random rand = new Random();
+
+	    // nextInt is normally exclusive of the top value,
+	    // so add 1 to make it inclusive
+	    int randomNum = rand.nextInt((max - min) + 1) + min;
+
+	    return randomNum;
+	}
+	// used to return false when numberOfMidterms&numberOfAssign=0 & hasFinal=false;
+	public boolean checkOneGradeElement(boolean hasFinal, int numAs,
+			int numMids){
+		if(!hasFinal && numMids==0 && numAs==0){
+			return false;
+		}
+		return true; 
+	}
+	// used to randomly assign weights of assignments, final and midterms
+	
+	
 	
 	
 	

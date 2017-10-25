@@ -13,7 +13,7 @@ import server.logic.model.Course;
 import server.logic.model.Student;
 
 
-public class UniversityClassTest {
+public class UniversityTests {
 	
 	
 	ApplicationUniversityMediator universityUnderTest;
@@ -89,7 +89,7 @@ public class UniversityClassTest {
 	
 	}
 	@Test
-	public void createCourse_returingCourseThatIsCreated() {
+	public void createCourse_returingCourseThatIsCreated1() {
 		
 		int cap = 60;
 		universityUnderTest.creatCourse("object oriented Development",cap);
@@ -104,7 +104,6 @@ public class UniversityClassTest {
 		int cap = 60;
 		
 		Course tempCourse = universityUnderTest.creatCourse("object oriented Development",cap);
-	
 		assertEquals(100,tempCourse.getSumOfCourseElements());
 		
 	

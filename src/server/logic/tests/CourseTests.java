@@ -110,6 +110,9 @@ public class CourseTests {
 	public void weightOfAssignment_OneAssignementNoPorjectNoFinal(){
 		//assignemnt number is from 0 to 5
 		Course tempCourse = new Course("Object Oriented",true,0,1,false,27,110111);
+		tempCourse.setNumberOfAssignments(1);
+		tempCourse.setNumberOfMidterms(0);
+		tempCourse.setWeightsOfaCourse();
 		// test 1 if it the parameter is 0 then the function should return 0
 		int expectedWeight = 100;
 		int actualWeight = tempCourse.weightOfAssignment(1);

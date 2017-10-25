@@ -1,0 +1,831 @@
+2017-10-11 14:43:42 INFO  LibClient:43 - Class: LibClient   : Exception thrown : Connection refused (Connection refused) 
+
+@2017-10-11 14:44:22 INFO  LibServer:34 - Binding to port 8080
+@2017-10-11 14:44:22 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 14:44:22 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-11 14:44:29 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:34648] Client Socket: [34648 ]
+
+@2017-10-11 14:44:29 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 14:44:29 INFO  LibClient:31 - 34648 : Connected to server: /127.0.0.1
+@2017-10-11 14:44:29 INFO  LibClient:32 - 34648 : Connected to portid: 34648
+@2017-10-11 14:44:29 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__34648
+@2017-10-11 14:46:14 INFO  LibServer:102 - Input from 127.0.0.1:34648 
+@2017-10-11 14:46:14 INFO  LibServer:119 - Output to 127.0.0.1:34648 Who Are you?Clerk or Student?
+
+@2017-10-11 14:46:18 INFO  LibServer:102 - Input from 127.0.0.1:34648 Student
+@2017-10-11 14:46:18 INFO  LibServer:111 - Output to 127.0.0.1:34648 
+
+@2017-10-11 15:01:50 INFO  LibServer:34 - Binding to port 8080
+@2017-10-11 15:01:50 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 15:01:50 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-11 15:01:59 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:34662] Client Socket: [34662 ]
+
+@2017-10-11 15:01:59 INFO  LibClient:31 - 34662 : Connected to server: /127.0.0.1
+@2017-10-11 15:01:59 INFO  LibClient:32 - 34662 : Connected to portid: 34662
+@2017-10-11 15:01:59 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 15:01:59 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__34662
+@2017-10-11 15:02:04 INFO  LibServer:102 - Input from 127.0.0.1:34662 j
+@2017-10-11 15:02:04 INFO  LibServer:119 - Output to 127.0.0.1:34662 Who Are you?Clerk or Student?
+
+@2017-10-11 15:02:08 INFO  LibServer:102 - Input from 127.0.0.1:34662 Clerk
+@2017-10-11 15:02:08 INFO  LibServer:111 - Output to 127.0.0.1:34662 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 Who Are you?Clerk or Student?
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 Who Are you?Clerk or Student?
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 Who Are you?Clerk or Student?
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 Who Are you?Clerk or Student?
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 Who Are you?Clerk or Student?
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 Who Are you?Clerk or Student?
+
+@2017-10-11 15:07:10 INFO  LibServer:102 - Input from 127.0.0.1:34662 null
+@2017-10-11 15:07:10 INFO  ServerThread:44 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-11 15:07:10 INFO  LibServer:111 - Output to 127.0.0.1:34662 
+
+@2017-10-11 15:07:29 INFO  LibServer:34 - Binding to port 8080
+@2017-10-11 15:07:29 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 15:07:29 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-11 15:07:36 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:34664] Client Socket: [34664 ]
+
+@2017-10-11 15:07:36 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 15:07:36 INFO  LibClient:31 - 34664 : Connected to server: /127.0.0.1
+@2017-10-11 15:07:36 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__34664
+@2017-10-11 15:07:36 INFO  LibClient:32 - 34664 : Connected to portid: 34664
+@2017-10-11 15:07:41 INFO  LibServer:102 - Input from 127.0.0.1:34664 a
+@2017-10-11 15:07:41 INFO  LibServer:119 - Output to 127.0.0.1:34664 Who Are you?Clerk or Student?
+
+@2017-10-11 15:07:44 INFO  LibServer:102 - Input from 127.0.0.1:34664 Clerk
+@2017-10-11 15:07:44 INFO  LibServer:111 - Output to 127.0.0.1:34664 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 Who Are you?Clerk or Student?
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 Who Are you?Clerk or Student?
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 Who Are you?Clerk or Student?
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 Who Are you?Clerk or Student?
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 Who Are you?Clerk or Student?
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 
+
+@2017-10-11 15:15:42 INFO  LibServer:102 - Input from 127.0.0.1:34664 null
+@2017-10-11 15:15:42 INFO  ServerThread:44 - Class: ServerThread: Exception thrown : Broken pipe (Write failed) 
+
+@2017-10-11 15:15:42 INFO  LibServer:111 - Output to 127.0.0.1:34664 Who Are you?Clerk or Student?
+
+@2017-10-11 15:15:51 INFO  LibServer:34 - Binding to port 8080
+@2017-10-11 15:15:51 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 15:15:51 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-11 15:15:59 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:34666] Client Socket: [34666 ]
+
+@2017-10-11 15:15:59 INFO  LibClient:31 - 34666 : Connected to server: /127.0.0.1
+@2017-10-11 15:15:59 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 15:15:59 INFO  LibClient:32 - 34666 : Connected to portid: 34666
+@2017-10-11 15:15:59 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__34666
+@2017-10-11 15:16:03 INFO  LibServer:102 - Input from 127.0.0.1:34666 
+@2017-10-11 15:16:03 INFO  LibServer:119 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:09 INFO  LibServer:102 - Input from 127.0.0.1:34666 Student
+@2017-10-11 15:16:09 INFO  LibServer:111 - Output to 127.0.0.1:34666 What can I do for you? Menu: Register for course / Deregiser from course/ Drop Course.
+
+@2017-10-11 15:16:11 INFO  LibServer:102 - Input from 127.0.0.1:34666 a
+@2017-10-11 15:16:11 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:15 INFO  LibServer:102 - Input from 127.0.0.1:34666 null
+@2017-10-11 15:16:15 INFO  ServerThread:44 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-11 15:16:15 INFO  LibServer:111 - Output to 127.0.0.1:34666 
+
+@2017-10-11 15:16:30 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:34670] Client Socket: [34670 ]
+
+@2017-10-11 15:16:30 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 15:16:30 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__34670
+@2017-10-11 15:16:30 INFO  LibClient:31 - 34670 : Connected to server: /127.0.0.1
+@2017-10-11 15:16:30 INFO  LibClient:32 - 34670 : Connected to portid: 34670
+@2017-10-11 15:16:32 INFO  LibServer:102 - Input from 127.0.0.1:34670 h
+@2017-10-11 15:16:32 INFO  LibServer:119 - Output to 127.0.0.1:34670 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:34 INFO  LibServer:102 - Input from 127.0.0.1:34670 a
+@2017-10-11 15:16:34 INFO  LibServer:111 - Output to 127.0.0.1:34670 
+
+@2017-10-11 15:16:38 INFO  LibServer:102 - Input from 127.0.0.1:34670 A
+@2017-10-11 15:16:38 INFO  LibServer:111 - Output to 127.0.0.1:34670 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:40 INFO  LibServer:102 - Input from 127.0.0.1:34670 a
+@2017-10-11 15:16:40 INFO  LibServer:111 - Output to 127.0.0.1:34670 
+
+@2017-10-11 15:16:40 INFO  LibServer:102 - Input from 127.0.0.1:34670 a
+@2017-10-11 15:16:40 INFO  LibServer:111 - Output to 127.0.0.1:34670 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:42 INFO  LibServer:102 - Input from 127.0.0.1:34670 aak
+@2017-10-11 15:16:42 INFO  LibServer:111 - Output to 127.0.0.1:34670 
+
+@2017-10-11 15:16:42 INFO  LibServer:102 - Input from 127.0.0.1:34670 
+@2017-10-11 15:16:42 INFO  LibServer:111 - Output to 127.0.0.1:34670 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:43 INFO  LibServer:102 - Input from 127.0.0.1:34670 
+@2017-10-11 15:16:43 INFO  LibServer:111 - Output to 127.0.0.1:34670 
+
+@2017-10-11 15:16:44 INFO  LibServer:102 - Input from 127.0.0.1:34670 
+@2017-10-11 15:16:44 INFO  LibServer:111 - Output to 127.0.0.1:34670 Who Are you?Clerk or Student?
+
+@2017-10-11 15:16:44 INFO  LibServer:102 - Input from 127.0.0.1:34670 
+@2017-10-11 15:16:44 INFO  LibServer:111 - Output to 127.0.0.1:34670 
+
+@2017-10-11 15:18:18 INFO  LibServer:102 - Input from 127.0.0.1:34670 a
+@2017-10-11 15:18:18 INFO  LibServer:111 - Output to 127.0.0.1:34670 Who Are you?Clerk or Student?
+
+@2017-10-11 15:18:19 INFO  LibServer:102 - Input from 127.0.0.1:34670 a
+@2017-10-11 15:18:19 INFO  LibServer:111 - Output to 127.0.0.1:34670 
+
+@2017-10-11 15:18:19 INFO  LibServer:102 - Input from 127.0.0.1:34670 
+@2017-10-11 15:18:19 INFO  LibServer:111 - Output to 127.0.0.1:34670 Who Are you?Clerk or Student?
+
+@2017-10-11 15:18:20 INFO  LibServer:102 - Input from 127.0.0.1:34670 aaa
+@2017-10-11 15:18:20 INFO  LibServer:111 - Output to 127.0.0.1:34670 
+
+@2017-10-11 15:18:21 INFO  LibServer:102 - Input from 127.0.0.1:34670 aa
+@2017-10-11 15:18:21 INFO  LibServer:111 - Output to 127.0.0.1:34670 Who Are you?Clerk or Student?
+
+@2017-10-11 18:15:05 INFO  LibClient:43 - Class: LibClient   : Exception thrown : Connection refused (Connection refused) 
+
+@2017-10-11 18:15:14 INFO  LibClient:43 - Class: LibClient   : Exception thrown : Connection refused (Connection refused) 
+
+@2017-10-11 18:15:29 INFO  LibClient:43 - Class: LibClient   : Exception thrown : Connection refused (Connection refused) 
+
+@2017-10-11 18:16:50 INFO  LibServer:34 - Binding to port 8080
+@2017-10-11 18:16:50 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 18:16:50 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-11 18:16:57 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:35858] Client Socket: [35858 ]
+
+@2017-10-11 18:16:57 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 18:16:57 INFO  LibClient:31 - 35858 : Connected to server: /127.0.0.1
+@2017-10-11 18:16:57 INFO  LibClient:32 - 35858 : Connected to portid: 35858
+@2017-10-11 18:16:57 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__35858
+@2017-10-11 18:17:03 INFO  LibServer:102 - Input from 127.0.0.1:35858 
+@2017-10-11 18:17:03 INFO  LibServer:119 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:17:07 INFO  LibServer:102 - Input from 127.0.0.1:35858 Clerk
+@2017-10-11 18:17:07 INFO  LibServer:111 - Output to 127.0.0.1:35858 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-11 18:17:11 INFO  LibServer:102 - Input from 127.0.0.1:35858 a
+@2017-10-11 18:17:11 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:17:12 INFO  LibServer:102 - Input from 127.0.0.1:35858 c
+@2017-10-11 18:17:12 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:17:18 INFO  LibServer:102 - Input from 127.0.0.1:35858 Student
+@2017-10-11 18:17:18 INFO  LibServer:111 - Output to 127.0.0.1:35858 What can I do for you? Menu: Register for course / Deregiser from course/ Drop Course.
+
+@2017-10-11 18:17:29 INFO  LibServer:102 - Input from 127.0.0.1:35858 a
+@2017-10-11 18:17:29 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:17:29 INFO  LibServer:102 - Input from 127.0.0.1:35858 a
+@2017-10-11 18:17:29 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 
+
+@2017-10-11 18:18:01 INFO  LibServer:102 - Input from 127.0.0.1:35858 null
+@2017-10-11 18:18:01 INFO  ServerThread:44 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-11 18:18:01 INFO  LibServer:111 - Output to 127.0.0.1:35858 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:06 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:35864] Client Socket: [35864 ]
+
+@2017-10-11 18:18:06 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-11 18:18:06 INFO  LibClient:31 - 35864 : Connected to server: /127.0.0.1
+@2017-10-11 18:18:06 INFO  LibClient:32 - 35864 : Connected to portid: 35864
+@2017-10-11 18:18:06 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__35864
+@2017-10-11 18:18:08 INFO  LibServer:102 - Input from 127.0.0.1:35864 a
+@2017-10-11 18:18:08 INFO  LibServer:119 - Output to 127.0.0.1:35864 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:12 INFO  LibServer:102 - Input from 127.0.0.1:35864 Student
+@2017-10-11 18:18:12 INFO  LibServer:111 - Output to 127.0.0.1:35864 What can I do for you? Menu: Register for course / Deregiser from course/ Drop Course.
+
+@2017-10-11 18:18:13 INFO  LibServer:102 - Input from 127.0.0.1:35864 a
+@2017-10-11 18:18:13 INFO  LibServer:111 - Output to 127.0.0.1:35864 
+
+@2017-10-11 18:18:14 INFO  LibServer:102 - Input from 127.0.0.1:35864 a
+@2017-10-11 18:18:14 INFO  LibServer:111 - Output to 127.0.0.1:35864 Who Are you?Clerk or Student?
+
+@2017-10-11 18:18:15 INFO  LibServer:102 - Input from 127.0.0.1:35864 a
+@2017-10-11 18:18:15 INFO  LibServer:111 - Output to 127.0.0.1:35864 
+
+@2017-10-11 18:24:08 INFO  LibServer:102 - Input from 127.0.0.1:35864 
+@2017-10-11 18:24:08 INFO  LibServer:111 - Output to 127.0.0.1:35864 Who Are you?Clerk or Student?
+
+@2017-10-11 18:24:12 INFO  LibServer:102 - Input from 127.0.0.1:35864 Clerk
+@2017-10-11 18:24:12 INFO  LibServer:111 - Output to 127.0.0.1:35864 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 00:37:02 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 00:37:02 FATAL LibServer:40 - java.net.BindException: Address already in use (Bind failed)
+@2017-10-13 00:37:25 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 00:37:25 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 00:37:25 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 00:37:46 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:37958] Client Socket: [37958 ]
+
+@2017-10-13 00:37:46 INFO  LibClient:31 - 37958 : Connected to server: /127.0.0.1
+@2017-10-13 00:37:46 INFO  LibClient:32 - 37958 : Connected to portid: 37958
+@2017-10-13 00:37:46 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 00:37:46 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__37958
+@2017-10-13 00:37:48 INFO  LibServer:102 - Input from 127.0.0.1:37958 H
+@2017-10-13 00:37:48 INFO  LibServer:119 - Output to 127.0.0.1:37958 Who Are you?Clerk or Student?
+
+@2017-10-13 00:38:52 INFO  LibServer:102 - Input from 127.0.0.1:37958 Clerk
+@2017-10-13 00:38:52 INFO  LibServer:111 - Output to 127.0.0.1:37958 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 00:39:01 INFO  LibServer:102 - Input from 127.0.0.1:37958 Create user
+@2017-10-13 00:39:01 INFO  LibServer:111 - Output to 127.0.0.1:37958 
+
+@2017-10-13 00:39:04 INFO  LibServer:102 - Input from 127.0.0.1:37958 
+@2017-10-13 00:39:04 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or Student?
+
+@2017-10-13 00:39:04 INFO  LibServer:102 - Input from 127.0.0.1:37958 
+@2017-10-13 00:39:04 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:39:26 INFO  LibServer:102 - Input from 127.0.0.1:37958 Clerk
+@2017-10-13 00:39:26 INFO  LibServer:111 - Output to 127.0.0.1:37958 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 00:39:59 INFO  LibServer:102 - Input from 127.0.0.1:37958 Create course
+@2017-10-13 00:39:59 INFO  LibServer:111 - Output to 127.0.0.1:37958 Please Input Course Info:'course title,cap size'
+
+@2017-10-13 00:40:14 INFO  LibServer:102 - Input from 127.0.0.1:37958 Obj,15
+@2017-10-13 00:40:14 INFO  LibServer:111 - Output to 127.0.0.1:37958 
+
+@2017-10-13 00:40:22 INFO  LibServer:102 - Input from 127.0.0.1:37958 
+@2017-10-13 00:40:22 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or Student?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:43:07 INFO  LibServer:102 - Input from 127.0.0.1:37958 null
+@2017-10-13 00:43:07 INFO  ServerThread:44 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-13 00:43:07 INFO  LibServer:111 - Output to 127.0.0.1:37958 Who Are you?Clerk or User?
+
+@2017-10-13 00:51:15 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 00:51:15 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 00:51:15 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 00:51:51 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:37968] Client Socket: [37968 ]
+
+@2017-10-13 00:51:51 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 00:51:51 INFO  LibClient:31 - 37968 : Connected to server: /127.0.0.1
+@2017-10-13 00:51:51 INFO  LibClient:32 - 37968 : Connected to portid: 37968
+@2017-10-13 00:51:51 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__37968
+@2017-10-13 00:51:55 INFO  LibServer:102 - Input from 127.0.0.1:37968 h
+@2017-10-13 00:51:55 INFO  LibServer:119 - Output to 127.0.0.1:37968 Who Are you?Clerk or Student?
+
+@2017-10-13 00:51:58 INFO  LibServer:102 - Input from 127.0.0.1:37968 Clerk
+@2017-10-13 00:51:58 INFO  LibServer:111 - Output to 127.0.0.1:37968 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 00:52:05 INFO  LibServer:102 - Input from 127.0.0.1:37968 Create Course
+@2017-10-13 00:55:45 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 00:55:45 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 00:55:45 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 00:55:52 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:37972] Client Socket: [37972 ]
+
+@2017-10-13 00:55:52 INFO  LibClient:31 - 37972 : Connected to server: /127.0.0.1
+@2017-10-13 00:55:52 INFO  LibClient:32 - 37972 : Connected to portid: 37972
+@2017-10-13 00:55:52 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 00:55:52 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__37972
+@2017-10-13 00:55:57 INFO  LibServer:102 - Input from 127.0.0.1:37972 hi
+@2017-10-13 00:55:57 INFO  LibServer:119 - Output to 127.0.0.1:37972 Who Are you?Clerk or Student?
+
+@2017-10-13 00:56:00 INFO  LibServer:102 - Input from 127.0.0.1:37972 Clerk
+@2017-10-13 00:56:00 INFO  LibServer:111 - Output to 127.0.0.1:37972 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 00:56:04 INFO  LibServer:102 - Input from 127.0.0.1:37972 create course
+@2017-10-13 01:07:03 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 01:07:03 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 01:07:03 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 01:07:11 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:37976] Client Socket: [37976 ]
+
+@2017-10-13 01:07:11 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 01:07:11 INFO  LibClient:31 - 37976 : Connected to server: /127.0.0.1
+@2017-10-13 01:07:11 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__37976
+@2017-10-13 01:07:11 INFO  LibClient:32 - 37976 : Connected to portid: 37976
+@2017-10-13 01:07:13 INFO  LibServer:102 - Input from 127.0.0.1:37976 a
+@2017-10-13 01:07:13 INFO  LibServer:119 - Output to 127.0.0.1:37976 Who Are you?Clerk or Student?
+
+@2017-10-13 01:07:17 INFO  LibServer:102 - Input from 127.0.0.1:37976 Clerk
+@2017-10-13 01:07:17 INFO  LibServer:111 - Output to 127.0.0.1:37976 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 01:07:23 INFO  LibServer:102 - Input from 127.0.0.1:37976 create course
+@2017-10-13 01:12:03 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 01:12:03 FATAL LibServer:40 - java.net.BindException: Address already in use (Bind failed)
+@2017-10-13 01:12:24 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 01:12:24 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 01:12:24 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 01:12:32 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:37984] Client Socket: [37984 ]
+
+@2017-10-13 01:12:32 INFO  LibClient:31 - 37984 : Connected to server: /127.0.0.1
+@2017-10-13 01:12:32 INFO  LibClient:32 - 37984 : Connected to portid: 37984
+@2017-10-13 01:12:32 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 01:12:32 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__37984
+@2017-10-13 01:12:37 INFO  LibServer:102 - Input from 127.0.0.1:37984 H
+@2017-10-13 01:12:37 INFO  LibServer:119 - Output to 127.0.0.1:37984 Who Are you?Clerk or Student?
+
+@2017-10-13 01:12:44 INFO  LibServer:102 - Input from 127.0.0.1:37984 Clerk
+@2017-10-13 01:12:44 INFO  LibServer:111 - Output to 127.0.0.1:37984 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 01:12:50 INFO  LibServer:102 - Input from 127.0.0.1:37984 Create Course
+@2017-10-13 01:12:50 INFO  LibServer:111 - Output to 127.0.0.1:37984 Please Input User Info:'username,password'
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or Student?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  LibServer:102 - Input from 127.0.0.1:37984 null
+@2017-10-13 01:20:41 INFO  LibServer:111 - Output to 127.0.0.1:37984 Who Are you?Clerk or User?
+
+@2017-10-13 01:20:41 INFO  ServerThread:60 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-13 01:20:53 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 01:20:53 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 01:20:53 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 01:21:02 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:37988] Client Socket: [37988 ]
+
+@2017-10-13 01:21:02 INFO  LibClient:31 - 37988 : Connected to server: /127.0.0.1
+@2017-10-13 01:21:02 INFO  LibClient:32 - 37988 : Connected to portid: 37988
+@2017-10-13 01:21:02 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 01:21:02 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__37988
+@2017-10-13 01:21:05 INFO  LibServer:102 - Input from 127.0.0.1:37988 hi
+@2017-10-13 01:21:05 INFO  LibServer:119 - Output to 127.0.0.1:37988 Who Are you?Clerk or Student?
+
+@2017-10-13 01:21:08 INFO  LibServer:102 - Input from 127.0.0.1:37988 Clerk
+@2017-10-13 01:21:08 INFO  LibServer:111 - Output to 127.0.0.1:37988 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 01:21:11 INFO  LibServer:102 - Input from 127.0.0.1:37988 Create user
+@2017-10-13 01:21:11 INFO  LibServer:111 - Output to 127.0.0.1:37988 
+
+@2017-10-13 01:21:19 INFO  LibServer:102 - Input from 127.0.0.1:37988 Create Course
+@2017-10-13 01:21:19 INFO  LibServer:111 - Output to 127.0.0.1:37988 Who Are you?Clerk or Student?
+
+@2017-10-13 01:21:23 INFO  LibServer:102 - Input from 127.0.0.1:37988 Clerk
+@2017-10-13 01:21:23 INFO  LibServer:111 - Output to 127.0.0.1:37988 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 01:21:27 INFO  LibServer:102 - Input from 127.0.0.1:37988 Create course
+@2017-10-13 01:21:27 INFO  LibServer:111 - Output to 127.0.0.1:37988 Please Input User Info:'course title,cap size'
+
+@2017-10-13 01:21:35 INFO  LibServer:102 - Input from 127.0.0.1:37988 ooo,19
+@2017-10-13 01:21:35 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@3ddfde7d]
+@2017-10-13 15:31:22 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 15:31:22 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 15:31:22 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:31:29 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:38254] Client Socket: [38254 ]
+
+@2017-10-13 15:31:29 INFO  LibClient:31 - 38254 : Connected to server: /127.0.0.1
+@2017-10-13 15:31:29 INFO  LibClient:32 - 38254 : Connected to portid: 38254
+@2017-10-13 15:31:29 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:31:29 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__38254
+@2017-10-13 15:31:31 INFO  LibServer:102 - Input from 127.0.0.1:38254 h
+@2017-10-13 15:31:31 INFO  LibServer:119 - Output to 127.0.0.1:38254 Who Are you?Clerk or Student?
+
+@2017-10-13 15:31:35 INFO  LibServer:102 - Input from 127.0.0.1:38254 Clerk
+@2017-10-13 15:31:35 INFO  LibServer:111 - Output to 127.0.0.1:38254 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 15:31:40 INFO  LibServer:102 - Input from 127.0.0.1:38254 create course
+@2017-10-13 15:31:40 INFO  LibServer:111 - Output to 127.0.0.1:38254 Please Input User Info:'course title,cap size'
+
+@2017-10-13 15:31:44 INFO  LibServer:102 - Input from 127.0.0.1:38254 aa,00
+@2017-10-13 15:31:44 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@3ec47c39]
+@2017-10-13 15:32:40 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 15:32:40 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:32:40 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 15:32:48 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:38256] Client Socket: [38256 ]
+
+@2017-10-13 15:32:48 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:32:48 INFO  LibClient:31 - 38256 : Connected to server: /127.0.0.1
+@2017-10-13 15:32:48 INFO  LibClient:32 - 38256 : Connected to portid: 38256
+@2017-10-13 15:32:48 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__38256
+@2017-10-13 15:32:54 INFO  LibServer:102 - Input from 127.0.0.1:38256 h
+@2017-10-13 15:32:54 INFO  LibServer:119 - Output to 127.0.0.1:38256 Who Are you?Clerk or Student?
+
+@2017-10-13 15:32:59 INFO  LibServer:102 - Input from 127.0.0.1:38256 Clerk
+@2017-10-13 15:32:59 INFO  LibServer:111 - Output to 127.0.0.1:38256 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 15:33:03 INFO  LibServer:102 - Input from 127.0.0.1:38256 create course
+@2017-10-13 15:33:03 INFO  LibServer:111 - Output to 127.0.0.1:38256 Please Input User Info:'course title,cap size'
+
+@2017-10-13 15:33:10 INFO  LibServer:102 - Input from 127.0.0.1:38256 aa,29
+@2017-10-13 15:33:10 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@2a4c1973]
+@2017-10-13 15:34:47 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 15:34:47 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:34:47 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 15:35:44 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:38258] Client Socket: [38258 ]
+
+@2017-10-13 15:35:44 INFO  LibClient:31 - 38258 : Connected to server: /127.0.0.1
+@2017-10-13 15:35:44 INFO  LibClient:32 - 38258 : Connected to portid: 38258
+@2017-10-13 15:35:44 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:35:44 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__38258
+@2017-10-13 15:35:46 INFO  LibServer:102 - Input from 127.0.0.1:38258 a
+@2017-10-13 15:35:46 INFO  LibServer:119 - Output to 127.0.0.1:38258 Who Are you?Clerk or Student?
+
+@2017-10-13 15:35:49 INFO  LibServer:102 - Input from 127.0.0.1:38258 Clerk
+@2017-10-13 15:35:49 INFO  LibServer:111 - Output to 127.0.0.1:38258 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 15:35:53 INFO  LibServer:102 - Input from 127.0.0.1:38258 create course
+@2017-10-13 15:35:53 INFO  LibServer:111 - Output to 127.0.0.1:38258 Please Input User Info:'course title,cap size'
+
+@2017-10-13 15:35:59 INFO  LibServer:102 - Input from 127.0.0.1:38258 aa,40
+@2017-10-13 15:35:59 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@2a4c1973]
+@2017-10-13 15:42:04 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 15:42:04 FATAL LibServer:40 - java.net.BindException: Address already in use (Bind failed)
+@2017-10-13 15:42:10 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:38266] Client Socket: [38266 ]
+
+@2017-10-13 15:42:10 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:42:10 INFO  LibClient:31 - 38266 : Connected to server: /127.0.0.1
+@2017-10-13 15:42:10 INFO  LibClient:32 - 38266 : Connected to portid: 38266
+@2017-10-13 15:42:10 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__38266
+@2017-10-13 15:42:19 INFO  LibServer:102 - Input from 127.0.0.1:38266 a
+@2017-10-13 15:42:19 INFO  LibServer:119 - Output to 127.0.0.1:38266 Who Are you?Clerk or Student?
+
+@2017-10-13 15:42:21 INFO  LibServer:102 - Input from 127.0.0.1:38266 Clerk
+@2017-10-13 15:42:21 INFO  LibServer:111 - Output to 127.0.0.1:38266 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 15:42:25 INFO  LibServer:102 - Input from 127.0.0.1:38266 Create course
+@2017-10-13 15:42:25 INFO  LibServer:111 - Output to 127.0.0.1:38266 Please Input User Info:'course title,cap size'
+
+@2017-10-13 15:42:36 INFO  LibServer:102 - Input from 127.0.0.1:38266 and,29
+@2017-10-13 15:44:02 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 15:44:02 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:44:02 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 15:44:07 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:38268] Client Socket: [38268 ]
+
+@2017-10-13 15:44:07 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:44:07 INFO  LibClient:31 - 38268 : Connected to server: /127.0.0.1
+@2017-10-13 15:44:08 INFO  LibClient:32 - 38268 : Connected to portid: 38268
+@2017-10-13 15:44:08 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__38268
+@2017-10-13 15:44:10 INFO  LibServer:102 - Input from 127.0.0.1:38268 a
+@2017-10-13 15:44:10 INFO  LibServer:119 - Output to 127.0.0.1:38268 Who Are you?Clerk or Student?
+
+@2017-10-13 15:44:13 INFO  LibServer:102 - Input from 127.0.0.1:38268 Clerk
+@2017-10-13 15:44:13 INFO  LibServer:111 - Output to 127.0.0.1:38268 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 15:44:16 INFO  LibServer:102 - Input from 127.0.0.1:38268 create course
+@2017-10-13 15:44:16 INFO  LibServer:111 - Output to 127.0.0.1:38268 Please Input User Info:'course title,cap size'
+
+@2017-10-13 15:44:19 INFO  LibServer:102 - Input from 127.0.0.1:38268 aa
+@2017-10-13 15:50:51 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 15:50:51 FATAL LibServer:40 - java.net.BindException: Address already in use (Bind failed)
+@2017-10-13 15:51:06 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 15:51:06 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 15:51:06 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:51:13 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:38270] Client Socket: [38270 ]
+
+@2017-10-13 15:51:13 INFO  LibClient:31 - 38270 : Connected to server: /127.0.0.1
+@2017-10-13 15:51:13 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:51:13 INFO  LibClient:32 - 38270 : Connected to portid: 38270
+@2017-10-13 15:51:13 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__38270
+@2017-10-13 15:51:16 INFO  LibServer:102 - Input from 127.0.0.1:38270 h
+@2017-10-13 15:51:16 INFO  LibServer:119 - Output to 127.0.0.1:38270 Who Are you?Clerk or Student?
+
+@2017-10-13 15:51:19 INFO  LibServer:102 - Input from 127.0.0.1:38270 Clerk
+@2017-10-13 15:51:19 INFO  LibServer:111 - Output to 127.0.0.1:38270 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 15:51:22 INFO  LibServer:102 - Input from 127.0.0.1:38270 create course
+@2017-10-13 15:51:22 INFO  LibServer:111 - Output to 127.0.0.1:38270 Please Input User Info:'course title,cap size'
+
+@2017-10-13 15:51:34 INFO  LibServer:102 - Input from 127.0.0.1:38270 aa,100
+@2017-10-13 15:51:34 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@8cfd570]
+@2017-10-13 15:56:59 INFO  LibServer:34 - Binding to port 8080
+@2017-10-13 15:57:00 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:57:00 INFO  LibServer:48 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 15:57:08 INFO  LibServer:72 - Client accepted : Client Address : [/127.0.0.1:38282] Client Socket: [38282 ]
+
+@2017-10-13 15:57:08 INFO  LibClient:31 - 38282 : Connected to server: /127.0.0.1
+@2017-10-13 15:57:08 INFO  LibClient:32 - 38282 : Connected to portid: 38282
+@2017-10-13 15:57:08 INFO  LibServer:63 - Waiting for a client ...
+@2017-10-13 15:57:08 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__38282
+@2017-10-13 15:57:11 INFO  LibServer:102 - Input from 127.0.0.1:38282 a
+@2017-10-13 15:57:11 INFO  LibServer:119 - Output to 127.0.0.1:38282 Who Are you?Clerk or Student?
+
+@2017-10-13 15:57:13 INFO  LibServer:102 - Input from 127.0.0.1:38282 Clerk
+@2017-10-13 15:57:13 INFO  LibServer:111 - Output to 127.0.0.1:38282 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 15:57:16 INFO  LibServer:102 - Input from 127.0.0.1:38282 create course
+@2017-10-13 15:57:16 INFO  LibServer:111 - Output to 127.0.0.1:38282 Please Input User Info:'course title,cap size'
+
+@2017-10-13 15:57:22 INFO  LibServer:102 - Input from 127.0.0.1:38282 aa,100
+@2017-10-13 15:57:22 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@2a4c1973]
+@2017-10-13 16:01:14 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:01:14 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:01:14 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:01:14 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:09:26 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:09:26 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:09:26 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:09:26 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:09:26 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@2017-10-13 16:09:58 INFO  LibServer:73 - Client accepted : Client Address : [/127.0.0.1:38356] Client Socket: [38356 ]
+
+@2017-10-13 16:09:58 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:09:58 INFO  LibClient:31 - 38356 : Connected to server: /127.0.0.1
+@2017-10-13 16:09:58 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__38356
+@2017-10-13 16:09:58 INFO  LibClient:32 - 38356 : Connected to portid: 38356
+@2017-10-13 16:10:00 INFO  LibServer:103 - Input from 127.0.0.1:38356 h
+@2017-10-13 16:10:00 INFO  LibServer:120 - Output to 127.0.0.1:38356 Who Are you?Clerk or Student?
+
+@2017-10-13 16:10:02 INFO  LibServer:103 - Input from 127.0.0.1:38356 Clerk
+@2017-10-13 16:10:02 INFO  LibServer:112 - Output to 127.0.0.1:38356 What can I do for you? Menu:Create Student/Course/, Delete Student/Course, Cancel Course, Degregister Student, Register Student.
+
+@2017-10-13 16:10:08 INFO  LibServer:103 - Input from 127.0.0.1:38356 Create course
+@2017-10-13 16:10:08 INFO  LibServer:112 - Output to 127.0.0.1:38356 Please Input User Info:'course title,cap size'
+
+@2017-10-13 16:10:13 INFO  LibServer:103 - Input from 127.0.0.1:38356 aaa,29
+@2017-10-13 16:10:13 INFO  String:78 - Operation:Create New User;User Info:[aaa,29];State:Success
+@2017-10-13 16:10:13 INFO  LibServer:112 - Output to 127.0.0.1:38356 Success!
+
+@2017-10-13 16:10:16 INFO  LibServer:103 - Input from 127.0.0.1:38356 
+@2017-10-13 16:10:16 INFO  LibServer:112 - Output to 127.0.0.1:38356 Please select from the menu.Menu:Create Student/Course/, Delete Student/Course.
+
+@2017-10-13 16:20:05 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:20:05 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:20:05 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:20:05 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@2017-10-13 16:20:05 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:21:30 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:21:30 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:21:30 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:21:30 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:21:30 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@2017-10-13 16:22:54 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:22:54 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:22:54 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:22:54 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:22:54 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@2017-10-13 16:23:14 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:23:14 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:23:14 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:23:14 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:23:14 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@2017-10-13 16:29:10 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:29:10 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:29:10 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:29:10 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:29:10 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@2017-10-13 16:29:56 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:29:56 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:29:56 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:29:56 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:29:56 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@2017-10-13 16:31:38 INFO  String:35 - Binding to port 8080
+@2017-10-13 16:31:38 INFO  String:64 - Waiting for a client ...
+@2017-10-13 16:31:38 INFO  String:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:31:38 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:31:38 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@2017-10-13 16:43:46 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:43:46 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:43:46 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:43:46 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:43:46 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@

@@ -13,6 +13,7 @@ public interface UniversityMediator {
     public List<Student> studentsOfUniversity = new ArrayList<Student>();
     public Student creatStudent(String title, int age, boolean isFullTime) ;
     public List<Course> courses();
+    
 
 
 

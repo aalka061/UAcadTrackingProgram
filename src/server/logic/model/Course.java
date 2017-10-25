@@ -2,6 +2,9 @@ package server.logic.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
+import server.logic.tables.UniversityTable;
 
 public class Course {
 	
@@ -18,7 +21,11 @@ public class Course {
 	private int assignments[];
 	private int midterms[];
 	private boolean hasProject;
-	private final static int FULL_GRADE = 100;
+	private int finalGrade;
+	private int dueDayAssignements[];
+	private int dueDayMidterms[];
+
+	public final static int FULL_GRADE = 100;
 
 	
 	
@@ -32,6 +39,7 @@ public class Course {
 		} else {
 			this.numberOfMidterms = numberOfMidterms;
 			midterms = new int[numberOfMidterms];
+			dueDayMidterms = new int[numberOfMidterms];
 		}
 		
 		if(numberOfAssignments<0 || numberOfAssignments>5){
@@ -39,6 +47,7 @@ public class Course {
 		} else {
 			this.numberOfAssignments = numberOfAssignments;
 			assignments = new int[numberOfAssignments];
+			dueDayAssignements = new int[numberOfAssignments];
 
 		}
 		
@@ -103,10 +112,9 @@ public class Course {
 		}
 		return null;
 	}
-	public int Code() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+public void setNumberOfAssignments(int numberOfAssignments) {
+	this.numberOfAssignments = numberOfAssignments;
+}
 	
 	private boolean checkCode(int codeOfCourse){
 		int firstDigitOfCode=  Integer.parseInt(Integer.toString(codeOfCourse).substring(0, 1));
@@ -143,24 +151,24 @@ public class Course {
 	public int weightOfAssignment(int assignmentNumber) {
 		if(assignmentNumber==0){
 			return 0;
-		} else if (!hasFinal && numberOfMidterms==0
-				&& !hasProject()){
-			for(int i=0; i<assignments.length;i++) {
-				assignments[i] = FULL_GRADE/assignments.length;
-			}
 		}
-		return assignments[assignmentNumber-1];
-
-		
+		return assignments[assignmentNumber-1];	
 		
 	}
 	
 	public void setAssignmentWeight(int assignmentNumber, int grade){
 		assignments[assignmentNumber-1] = grade;
 	}
+	
+	public void setMidtermWeight(int midtermNumber, int grade){
+		midterms[midtermNumber-1] = grade;
+	}
 	public int weightOfMidterm(int midtermNum) {
 		// TODO Auto-generated method stub
-		return 0;
+		if(midtermNum==0){
+			return 0;
+		} else 
+			return midterms[midtermNum-1];
 	}
 	
 	public int weightOfFinal() {
@@ -168,10 +176,12 @@ public class Course {
 		if (hasFinal==false)
 			return 0;
 		else 
-			return 50;
+			return finalGrade;
 		
 	}
-	
+	public void setFinalGrade(int finalGrade) {
+		this.finalGrade = finalGrade;
+	}
 	public boolean isFull(){
 		if(capSize==studentList.size()){
 			return true;
@@ -182,6 +192,173 @@ public class Course {
 	public boolean hasProject() {
 		return false; 
 	}
+
+	public boolean isHasFinal() {
+		return hasFinal;
+	}
+	public int getNumberOfAssignments() {
+		return numberOfAssignments;
+	}
+
+
+	public int getSumOfCourseElements() {
+		// TODO Auto-generated method stub
+		int assignementsGrade=0;
+		int midtermsGrade = 0; 
+		//System.out.println(assignementsGrade);
+		for (int i=1; i<=numberOfAssignments;i++){
+			assignementsGrade=assignementsGrade+weightOfAssignment(i);
+		}
+		
+		for (int i=1; i<=numberOfMidterms;i++){
+			midtermsGrade=midtermsGrade+weightOfMidterm(i);
+		}
+		return weightOfFinal()+midtermsGrade+assignementsGrade ;
+	}
+	public int[] getMidterms() {
+		return midterms;
+	}
+	public int[] getAssignments() {
+		return assignments;
+	}
+	
+public void setWeightsOfaCourse(){
+		
+	// case 1 : final + midterms+ assignements 
+		if (isHasFinal() && getNumberOfMidterms()>0 && 
+				getNumberOfAssignments()>0){
+			int sum=0;
+			int sum2=0;
+			int finalWeight = (randInt(0,100)*2)%100; // get only even numbers
+			finalGrade =finalWeight;
+			int midAndAsWeight = (Course.FULL_GRADE-finalWeight);
+			int midWeight =0;
+			if ((midAndAsWeight/2)%2==0) {
+				midWeight = (midAndAsWeight/2);
+			} else {
+				midWeight = (midAndAsWeight/2)+1;
+			}
+		
+			
+			int assignWeight=Course.FULL_GRADE-finalWeight-midWeight;
+			for (int i=0; i<getMidterms().length;i++){
+				int grade = midWeight/getMidterms().length;
+				setMidtermWeight(i+1, grade);
+				
+			}
+			for (int i=0; i<getAssignments().length;i++){
+				int grade = assignWeight/getAssignments().length;
+				setAssignmentWeight(i+1, grade);
+			}
+			
+			
+			// case 2 : no final + midterms+ assignements 
+
+		} else if (!isHasFinal() && getNumberOfMidterms()>0 && 
+				getNumberOfAssignments()>0){
+
+			int midsWeight = (randInt(0,100)*2)%100; // get only even numbers
+			int weightOfAs = Course.FULL_GRADE-midsWeight;
+			
+			for (int i=0; i<getMidterms().length;i++){
+				int grade = midsWeight/getMidterms().length;
+				setMidtermWeight(i+1, grade);
+				
+			}
+			for (int i=0; i<getAssignments().length;i++){
+				int grade = weightOfAs/getAssignments().length;
+				setAssignmentWeight(i+1, grade);
+			}
+
+		 
+			
+		} else if (!isHasFinal() && getNumberOfMidterms()==0 && getNumberOfAssignments()>0){
+			
+			setAssignmentWeight(1, 100);
+		}
+		System.out.println(getNumberOfMidterms() +" "+getNumberOfAssignments() + " "+ getCode());
+
+		
+		
+		
+	}
+	public int[] getDueDayMidterms() {
+		return dueDayMidterms;
+	}
+	public int[] getDueDayAssignements() {
+		return dueDayAssignements;
+	}
+	
+	public void setDueDayAssignements(int[] dueDayAssignements) {
+		this.dueDayAssignements = dueDayAssignements;
+	}
+	
+	public void setDueDayMidterms(int[] dueDayMidterms) {
+		this.dueDayMidterms = dueDayMidterms;
+	}
+	
+	public int getDueDateForAssignement (int index){
+		if(dueDayAssignements.length>0){
+			return dueDayAssignements[index];
+		} else {
+			return 0;
+		}
+	}
+	public int getDueDateForMidterm (int index){
+		if(dueDayMidterms.length>0){
+			return dueDayMidterms[index];
+		} else {
+			return 0;
+		}
+	}
+
+	public void setDueDates() {
+		
+		if (numberOfAssignments>1){
+			int timeLimitAs= UniversityTable.TERMDURATION/numberOfAssignments;
+			int accTime = timeLimitAs; 
+			for (int i=0 ; i<numberOfAssignments; i++) {
+				dueDayAssignements[i]= UniversityTable.TERMSTARTDAY+accTime;
+				accTime = accTime+timeLimitAs;
+				System.out.println(dueDayAssignements[i]);
+
+			}
+		} else if (numberOfAssignments==1) {
+			dueDayAssignements[0] = UniversityTable.TERMSTARTDAY+35;
+		} 
+		
+		if (numberOfMidterms>1){
+			int timeLimitMs= UniversityTable.TERMDURATION/numberOfMidterms;
+			int m1 = randInt(20,30); // first midterm 
+			int m2 = randInt(45,70); 
+			
+			dueDayMidterms[0]= UniversityTable.TERMSTARTDAY+m1;
+			dueDayMidterms[1]= UniversityTable.TERMSTARTDAY+m2;
+			
+			System.out.println(dueDayMidterms[0]);
+			System.out.println(dueDayMidterms[1]);
+
+
+
+			
+		} else if(numberOfMidterms==1) {
+			dueDayMidterms[0] = UniversityTable.TERMSTARTDAY+40;
+		} 
+		
+	}
+//used to generate a number between min and max 
+	public int randInt(int min, int max) {
+
+	    // Usually this can be a field rather than a method variable
+	    Random rand = new Random();
+
+	    // nextInt is normally exclusive of the top value,
+	    // so add 1 to make it inclusive
+	    int randomNum = rand.nextInt((max - min) + 1) + min;
+
+	    return randomNum;
+	}
+	
 	
 	
 

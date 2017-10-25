@@ -1,0 +1,6 @@
+2017-10-13 16:50:01 INFO  LibServer:35 - Binding to port 8080
+@2017-10-13 16:50:01 INFO  LibServer:64 - Waiting for a client ...
+@2017-10-13 16:50:01 INFO  LibServer:49 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-10-13 16:50:01 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: [server.logic.model.Course@15aeb7ab]
+@2017-10-13 16:50:01 INFO  String:56 - Operation:Initialize Univeristy uOttawa
+@
