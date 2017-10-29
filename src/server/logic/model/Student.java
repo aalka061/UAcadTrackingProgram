@@ -11,7 +11,8 @@ public class Student {
 	private boolean isCreated = false; 
 	private boolean isFullTime; 
 	private ArrayList<Course> currentCourses;
-	
+	private ArrayList<Course> completedCourses;
+
 	public Student (){
 		this.studentNumber=0;
 		this.name="UnKnown";
@@ -62,6 +63,26 @@ public class Student {
 		//System.out.println(result);
 		return result;
 	}
+	/*
+	if(droppedCourse!=null){
+		deregisterCourse(droppedCourse);
+		completedCourses.add(droppedCourse);
+		droppedCourse.setDropped(true);
+		return true;
+	}
+	return false;
+	*/
+	public boolean dropCourse(Course toBeDroppedCourse) {
+		// TODO Auto-generated method stub
+		if(toBeDroppedCourse!=null){
+			deregisterCourse(toBeDroppedCourse);
+			completedCourses.add(toBeDroppedCourse);
+			toBeDroppedCourse.setDropped(true);
+			return true;
+		}
+		return false;
+	}
+	
 	public boolean deregisterCourse(Course toBeRemovedCourse) {
 		// TODO Auto-generated method stub
 		boolean result = false;

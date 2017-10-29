@@ -204,6 +204,24 @@ public class CourseTests {
 	}
 	
 	@Test
+	public void setDueDates_OneAsOneMidsNoFinal(){
+		//midtermNum number is from 0 to 2
+		//if the parameter is 0 then the function should return 0
+		courseUnderTest= new Course("OOD",false,1,1,false,26,110111); 
+		courseUnderTest.setDueDates();
+		int expectedDueA1 =70;
+		int expectedM1 = 75;
+		int actualDueA1= courseUnderTest.getDueDateForAssignement(0);
+		int actualM1 =  courseUnderTest.getDueDateForMidterm(0);
+		assertEquals(expectedDueA1,actualDueA1);
+		assertEquals(expectedM1,actualM1);
+
+		
+	}
+	
+	
+	
+	@Test
 	public void weightOfFinal_hasFinalNoAssignementNoMid_returningOneHundared(){
 		//midtermNum number is from 0 to 2
 		//if the parameter is 0 then the function should return 0

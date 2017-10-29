@@ -24,6 +24,8 @@ public class Course {
 	private int finalGrade;
 	private int dueDayAssignements[];
 	private int dueDayMidterms[];
+	private boolean isDropped=false;
+
 
 	public final static int FULL_GRADE = 100;
 
@@ -70,7 +72,9 @@ public class Course {
 	}
 	
 	
-	
+	public void setDropped(boolean isDropped) {
+		this.isDropped = isDropped;
+	}
 	public void setCode(int code) {
 		this.myCode = code;
 	}
@@ -300,8 +304,41 @@ public void setWeightsOfaCourse(){
 			
 		} else if (isHasFinal() && getNumberOfMidterms()==0 && getNumberOfAssignments()==0){
 			setFinalGrade(100);
+		} else if (!isHasFinal() && getNumberOfMidterms()>0 && getNumberOfAssignments()==0){
+			int midWeight = FULL_GRADE/getNumberOfMidterms();
+			for (int i=0; i<getMidterms().length;i++){
+				setMidtermWeight(i+1, midWeight);
+			}
+		}else if (isHasFinal() && getNumberOfMidterms()>0 && getNumberOfAssignments()==0){
+			setFinalGrade(60);
+			int midWeight = FULL_GRADE-60/getNumberOfMidterms();
+			for (int i=0; i<getMidterms().length;i++){
+				setMidtermWeight(i+1, midWeight);
+			}
+		}else if (isHasFinal() && getNumberOfMidterms()==0 && getNumberOfAssignments()>0){
+			//final , 1 A : 70 , 30
+			// final, 2 A : 60,  40
+			// FINAL, 3 A : 70,  30
+			// final, 4 A : 60,  40
+			// final, 5 A : 50,  50
+			int aWeight=0; 
+			if(getNumberOfAssignments()==1 || getNumberOfAssignments()==3 ){
+				aWeight = 30;
+				
+			} else if (getNumberOfAssignments()==2 || getNumberOfAssignments()==4){
+				aWeight = 40;
+			} else {
+				aWeight = 50;
+
+			}
+			setFinalGrade(FULL_GRADE-aWeight);
+			
+			for (int i=0; i<getAssignments().length;i++){
+				setAssignmentWeight(i+1, aWeight);
+		
+			}
 		}
-		System.out.println(getNumberOfMidterms() +" "+getNumberOfAssignments() + " "+ getCode());
+		System.out.println(isHasFinal()+ " "+ getNumberOfMidterms() +" "+getNumberOfAssignments() + " "+ getCode());
 
 		
 		
@@ -339,6 +376,7 @@ public void setWeightsOfaCourse(){
 
 	public void setDueDates() {
 		
+		
 		if (numberOfAssignments>1){
 			int timeLimitAs= UniversityTable.TERMDURATION/numberOfAssignments;
 			int accTime = timeLimitAs; 
@@ -362,13 +400,22 @@ public void setWeightsOfaCourse(){
 			
 			System.out.println(dueDayMidterms[0]);
 			System.out.println(dueDayMidterms[1]);
-
-
-
 			
 		} else if(numberOfMidterms==1) {
 			dueDayMidterms[0] = UniversityTable.TERMSTARTDAY+40;
 		} 
+		
+	}
+	
+	public int markForStudent(Student student){
+		
+		for (int i=0; i<student.getCurrentCourses().size();i++){
+			if (student.getCurrentCourses().get(i).getCode()==this.getCode()){
+				return student.getCurrentCourses().get(i).getSumOfCourseElements();
+			}
+
+		}
+		return 0;
 		
 	}
 //used to generate a number between min and max 

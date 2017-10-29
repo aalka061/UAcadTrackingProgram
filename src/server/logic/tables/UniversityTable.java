@@ -27,7 +27,9 @@ public class UniversityTable {
 	public static final int REGISTRATIONDURATION   = 34;
 	public static final int TERMDURATION           = 84;
 	public static final int TERMSTARTDAY           = 35;
-	public static final int TERMENDDAY             = 119;
+	public static final int LASTDAYDEREGISTRATION  = 49;
+	public static final int LASTDAYDROP            = 75;
+	public static final int TERMENDDAY             = 120;
 	public static final int FINALDUEDAY            = 119;
 
 
@@ -59,7 +61,7 @@ public class UniversityTable {
 	 private void coursesCreated() {
 		// TODO Auto-generated method stub
 		 List<Course> coursesList = CourseTabel.getInstance().getCourseList();
-	    String[] titleList=new String[]{"OOO","Machine Learning","Wirless AdHock",
+	    String[] titleList=new String[]{"Obejct Oriented Dev.","Machine Learning","Wireless AdHock",
 	    		"Mutimedia Commuincation"};
 	    String[] studentsNames=new String[]{"Emley","Michelle","Linda","Richard"};
 	    Boolean[] isFulltime=new Boolean[]{true,false,false,true};
@@ -93,7 +95,7 @@ public class UniversityTable {
 		
 			 for (int i=0; i<students.size();i++){
 				 Student student = students.get(i);
-				 System.out.println("Student"+student.getName());
+				 System.out.println("Student: "+student.getName());
 				 List<Course> studentCourses = students.get(i).getCurrentCourses();  // course 1 
 			//	 System.out.println("number of courses are "+studentCourses.size());
 			
@@ -107,10 +109,10 @@ public class UniversityTable {
 								 if(course.getDueDateForAssignement(k)==JavaReminder.day){
 								//	 System.out.println("Due Date : "+ course.getDueDateForAssignement(k));
 									 int aGrade = course.weightOfAssignment(k+1);
-									 
-									 course.setAssignmentWeight(k+1,randInt(0,aGrade));
-									 System.out.println("Course : "+course.getCode()+" Assignment# :"+(k+1)+"Grade: "+
-									 aGrade);
+									 int receivedGrad = randInt(0,aGrade);
+									 course.setAssignmentWeight(k+1,receivedGrad);
+									 System.out.println("    Course : "+course.getCode()+" Assignment# :"+(k+1)+" Grade: "+
+											 receivedGrad +"/"+aGrade);
 								 }
 							 }
 					 	}
@@ -119,20 +121,20 @@ public class UniversityTable {
 								 if(course.getDueDateForMidterm(k)==JavaReminder.day){
 									// System.out.println("number of midterms are"+ course.getNumberOfAssignments());
 									 int midGrade = course.weightOfMidterm(k+1);
-									 course.setMidtermWeight(k+1,randInt(0,midGrade));
-									 System.out.println("Course : "+course.getCode()+" Midterm# :"+(k+1)+"Grade: "+
-											 midGrade);
+									 int receivedGrade=randInt(0,randInt(0,midGrade));
+									 course.setMidtermWeight(k+1,receivedGrade);
+									 System.out.println("    Course : "+course.getCode()+" Midterm# :"+(k+1)+"Grade: "+
+											 receivedGrade+"/"+midGrade);
 
 								 }
 							
 							 }
 						}
-						
-						
-						
 						if(JavaReminder.day==FINALDUEDAY){
 							int finalWeight = course.weightOfFinal();
+							
 							int finalGradeRandom= randInt(0,finalWeight);
+							 System.out.println("     Course : "+course.getCode()+" Final :" + finalGradeRandom +"/"+finalWeight);
 							course.setFinalGrade(finalGradeRandom);
 						}
 						 
@@ -142,15 +144,14 @@ public class UniversityTable {
 					
 				 }
 			 }
-			 today_2=JavaReminder.day; 
-			 
-		 
-		 
+					 
  			 logger.info(String.format("Operation:Initialize Univeristy uOttawa with courses"));
 			 
 			
 		}
-	 
+	 public void termEnds() {
+		 
+	 }
 	 private boolean isDueAs(Course course){
 		
 		 
@@ -282,6 +283,7 @@ public class UniversityTable {
 	
 		return result;	
 	}
+	
 	public Object cancelCourse(int courseCode) {
 		
 		boolean result=true;

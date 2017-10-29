@@ -2,6 +2,7 @@ package server.logic.handler;
 
 import server.logic.handler.model.Output;
 import server.logic.handler.model.ServerOutput;
+import server.logic.model.JavaReminder;
 
 
 public class InputHandler {
@@ -24,6 +25,8 @@ public class InputHandler {
     public static final int OVERDUECOURSECREATION=16;
 	private static final int STUDENTSTARTREGISTRATION = 17;
     public static final int TERMSTART=18;
+	private static final int DEREGISTERORDROPCOURSE =20;
+
 
     OutputHandler outputHandler=new OutputHandler();
 
@@ -34,15 +37,7 @@ public class InputHandler {
 		 String output = "";
 		 Output o = new Output("",0);
 		 ServerOutput oo = new ServerOutput(output,o.getState());
-	     o = outputHandler.checkTermStart();
-	     /*
-	     	if (o.getState()==TERMSTART){
-	     		o=outputHandler.startTheTerm();
-	     		output = o.getOutput();
-	     		state = o.getState();
-	     		oo.setOutput(output);
-	     		oo.setState(state);
-	     	}*/
+	   
 	     	if (state == WAITING) {
 	        	output = "Who Are you?Clerk or Student?";
 	            state = FINISHWAITING;
@@ -64,7 +59,7 @@ public class InputHandler {
 		            oo.setState(state);
 	            
 	            } else {
-	            	output = "Who Are you?Clerk or User?";
+	            	output = "Who Are you? Clerk or Student?";
 	            	state = FINISHWAITING;
 	            	oo.setOutput(output);
 		            oo.setState(state);
@@ -114,8 +109,8 @@ public class InputHandler {
 	            	oo.setOutput(output);
 		            oo.setState(state);
 	        	}else{
-	            	output = "Please select from the menu.Menu:Create Student/Course, Register Student"
-					+ ", Cancel/Destroy course";
+	            	output = "Please select from the menu.Menu:Create Student/Course"
+					+ ", Cancel/Destroy Course";
 	                state = CLERK;
 	                oo.setOutput(output);
 		            oo.setState(state);
@@ -174,35 +169,22 @@ public class InputHandler {
     		            oo.setState(state);
     	        	} else if (input.equalsIgnoreCase("drop course")){
     	        		output = "Please Input course code :";
-    	            	state=DROPCOURSE;
+    	        		state = DEREGISTERORDROPCOURSE; 
     	            	oo.setOutput(output);
     		            oo.setState(state);
     	        		
-    	        	}else if (input.equalsIgnoreCase("deregister course")){
-    	        		output = "Please Input course code :";
-    	            	state=DEREGISTERCOURSE;
-    	            	oo.setOutput(output);
-    		            oo.setState(state);
-    	        		
-    	        	}else if (input.equalsIgnoreCase("cancel course")){
-    	        		output = "Please Input course code :";
-    	            	state=CANCELCOURSE;
-    	            	oo.setOutput(output);
-    		            oo.setState(state);
     	        	}else{
-    	            	output = "Please select from the menu.Menu:register/drop/deregister course"
-    	    					+ ", Cancel/Destroy course";
-    	    	        state = STUDENT;
+    	            	output = "Please select from the menu.Menu:register/drop course";
+    	            	state= STUDENT;
     	    	        oo.setOutput(output);
     	    		    oo.setState(state);
     	    	      }
         		}else{
-	            	output = "Registration is Not Open YET!";
+	            	output = "Registration Is Not Allowed";
 	                state = STUDENT;
 	                oo.setOutput(output);
 		            oo.setState(state);
 	             }
-	        	
 	        	}
 	        else if(state==REGISTERTOCOURSE){
         		o=outputHandler.registerCourse(input);
@@ -213,6 +195,21 @@ public class InputHandler {
   
 	        }  else if(state==DEREGISTERCOURSE){
         		o=outputHandler.deregisterCourse(input);
+        		output=o.getOutput();
+        		state=o.getState();
+        		oo.setOutput(output);
+	            oo.setState(state);
+  
+	        } else if(state==DROPCOURSE){
+	      
+        		o=outputHandler.dropCourse(input);
+        		output=o.getOutput();
+        		state=o.getState();
+        		oo.setOutput(output);
+	            oo.setState(state);
+  
+	        } else if(state==DEREGISTERORDROPCOURSE){
+        		o=outputHandler.deregisterOrDropCourse(input);
         		output=o.getOutput();
         		state=o.getState();
         		oo.setOutput(output);

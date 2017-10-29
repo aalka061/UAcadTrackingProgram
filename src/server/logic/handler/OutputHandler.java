@@ -27,12 +27,14 @@ public class OutputHandler {
 	private static final int STUDENTSTARTREGISTRATION = 17;
     public static final int TERMSTART=18;
     public static final int TERMEND = 19;
+	private static final int DEREGISTERORDROPCOURSE =20;
+	private static final int DROPCOURSESTATE = 21;
 	
 	
 	public Output clerkLogin(String input) {
 		Output output=new Output("",0);
 		   
-			output.setOutput("What can I do for you? Menu:Create Student/Course, Register Student"
+			output.setOutput("What can I do for you? Menu:Create Student/Course"
 					+ ", Cancel/Destroy Course");
         	output.setState(CLERK);
 		
@@ -67,7 +69,7 @@ public class OutputHandler {
         	result=StudentTabel.getInstance().lookupStudentById(studentNumber);
         	if(result.equals(true)){
         		output.setOutput("What can I do for you?"
-        				+ "Menu: Register for course / Deregiser from course/ Drop Course.");
+        				+ "Menu: Register Course / Drop Course.");
             	output.setState(STUDENT);
         	}else{
         		output.setOutput("Wrong studnent number");
@@ -227,6 +229,9 @@ public Output cancelCourse(String input) {
 	    	output.setOutput("Your input should be a a course code'");
 	    	output.setState(REGISTERTOCOURSE);
 	
+	    } else if (JavaReminder.day >UniversityTable.TERMSTARTDAY){
+	    	output.setOutput("Registration Deadline is Passed!");
+	    	output.setState(STUDENT);
 	    }else{
 	    	result=StudentTabel.getInstance().registerCourse(courseCode);
 	    	if(result.equals(true)){
@@ -240,7 +245,63 @@ public Output cancelCourse(String input) {
 	
 	}
 	
+	public Output deregisterOrDropCourse(String input) {
+		Output output=new Output("",0);
+	    // strArray = input.split(",");
+		boolean isCourseCodeNumber = numberOrNot(input);
+	    //boolean email=strArray[0].contains("@");
+	    int courseCode = Integer.parseInt(input);
+	  //  boolean isFulltime=Boolean.valueOf(strArray[2]);
+	    Object result="";
+	    if(!isCourseCodeNumber){
+	    	output.setOutput("Your input should be a a course code'");
+	    	output.setState(DEREGISTERORDROPCOURSE);
+	
+	    }else{
+	    	result=StudentTabel.getInstance().deregisterOrDrop(courseCode);
+	    	if(result.equals(true)){
+	    		output.setOutput("Success!");
+	    	}else{
+	    		output.setOutput("Course cannot be Dropped");
+	    	}
+	    	output.setState(STUDENT);
+	    }
+		return output;	
+	
+		 
+	}
+
+	
 	public Output deregisterCourse(String input) {
+		
+			Output output=new Output("",0);
+		    // strArray = input.split(",");
+			boolean isCourseCodeNumber = numberOrNot(input);
+		    //boolean email=strArray[0].contains("@");
+		    int courseCode = Integer.parseInt(input);
+		  //  boolean isFulltime=Boolean.valueOf(strArray[2]);
+		    Object result="";
+		    if(!isCourseCodeNumber){
+		    	output.setOutput("Your input should be a a course code'");
+		    	output.setState(DEREGISTERCOURSE);
+		
+		    }else{
+		    	result=StudentTabel.getInstance().deregisterCourse(courseCode);
+		    	if(result.equals(true)){
+		    		output.setOutput("Success!");
+		    	}else{
+		    		output.setOutput("Course is not existant");
+		    	}
+		    	output.setState(STUDENT);
+		    }
+			return output;	
+		
+		
+		
+	
+	}
+	
+	public Output dropCourse(String input) {
 		// TODO Auto-generated method stub
 		Output output=new Output("",0);
 	    // strArray = input.split(",");
@@ -251,10 +312,10 @@ public Output cancelCourse(String input) {
 	    Object result="";
 	    if(!isCourseCodeNumber){
 	    	output.setOutput("Your input should be a a course code'");
-	    	output.setState(REGISTERTOCOURSE);
+	    	output.setState(DROPCOURSE);
 	
 	    }else{
-	    	result=StudentTabel.getInstance().deregisterCourse(courseCode);
+	    	result=StudentTabel.getInstance().dropCourse(courseCode);
 	    	if(result.equals(true)){
 	    		output.setOutput("Success!");
 	    	}else{
@@ -265,6 +326,8 @@ public Output cancelCourse(String input) {
 		return output;	
 	
 	}
+	
+	
 	
 	boolean numberOrNot(String input)
 	{
@@ -303,10 +366,10 @@ public Output cancelCourse(String input) {
 			  //  boolean isFulltime=Boolean.valueOf(strArray[2]);
 			    Object result="";
 			    
-			    if (JavaReminder.day>UniversityTable.COURSECREACTIONDEADLINE &&JavaReminder.day<UniversityTable.TERMSTARTDAY){
+			    if (JavaReminder.day>=UniversityTable.COURSEREGISTRATIONSTART &&JavaReminder.day<UniversityTable.LASTDAYDROP){
 		    		output.setOutput("Now you can register!");
 			    	output.setState(STUDENTSTARTREGISTRATION);
-				}
+				} 
 
 				return output;	
 	}

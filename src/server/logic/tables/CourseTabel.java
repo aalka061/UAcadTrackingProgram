@@ -6,7 +6,8 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import server.logic.model.Course;
-
+import server.logic.model.JavaReminder;
+import server.logic.model.Student;
 import utilities.Trace;
 
 public class CourseTabel {
@@ -48,6 +49,7 @@ public class CourseTabel {
 		// TODO Auto-generated method stub
 		return courseList;
 	}
+	
 	public Course findCourse (int courseCode){
 		
 		Course resultedCourse = null;
@@ -59,6 +61,43 @@ public class CourseTabel {
 		return resultedCourse;
 	}
 	
+	public void termEnded(){
+		// currentCourses for every student 
+		// student 1 -> course 1 - > getSumOfElements 
+		//           -> course 2  -> getSumOfElements 
+		 List<Student> students = StudentTabel.getInstance().getStudentList(); 
+		for (int i=0; i<students.size();i++){
+			 Student student = students.get(i);
+			 System.out.println("Student"+student.getName());
+			 List<Course> studentCourses = students.get(i).getCurrentCourses();  // course 1 
+		//	 System.out.println("number of courses are "+studentCourses.size());
+		
+			 for (int j=0; j<studentCourses.size();j++){
+				
+				 Course course = studentCourses .get(j);
+			    // System.out.println("course is "+ course.getCode());
+				 System.out.println("   "+ course.title()+ " "+course.getCode()+ " : "+ course.getSumOfCourseElements());
+		/*
+		for(int i=0 ; i<courseList.size();i++){
+			System.out.println("Course "+courseList.get(i).getCode());
+			List<Student>studentList=courseList.get(i).Students();
+			System.out.println(studentList.size());
+
+			for (int j=0; j<studentList.size();j++){
+				System.out.println(studentList.get(j).getName());
+				for (int k=0; k<studentList.get(j).getCurrentCourses().size();k++){
+					if(courseList.get(i).getCode()==studentList.get(j).getCurrentCourses().get(k).getCode()){
+						System.out.println(studentList.get(j).getCurrentCourses().get(k).getSumOfCourseElements());
+					}
+				}
+			
+			}
+		}
+		*/
+	}
+	
 
 
+}
+	}
 }
