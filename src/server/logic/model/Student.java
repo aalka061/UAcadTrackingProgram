@@ -2,6 +2,8 @@ package server.logic.model;
 
 import java.util.ArrayList;
 
+import server.logic.tables.CourseTabel;
+
 public class Student {
 	
 	private static int studentId =0;
@@ -33,6 +35,7 @@ public class Student {
 		this.isFullTime=isFullTime;
 		this.isCreated = false;
 		currentCourses = new ArrayList<Course>();
+		completedCourses = new ArrayList<Course>();
 		}
 	public String getName() {
 		// TODO Auto-generated method stub
@@ -58,6 +61,7 @@ public class Student {
 		boolean result = false;
 		if (newCourse !=null && checkDuplicateCourses(newCourse)){
 				currentCourses.add(newCourse);
+				
 				result = true; 
 		} 
 		//System.out.println(result);

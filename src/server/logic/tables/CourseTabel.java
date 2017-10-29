@@ -50,6 +50,12 @@ public class CourseTabel {
 		return courseList;
 	}
 	
+	public void removeStudent(int courseCode, int studentNumber){
+		Course course = findCourse(courseCode);
+		Student student = StudentTabel.getInstance().getSutdent(studentNumber-1);
+		course.removeStudent(student);
+	}
+	
 	public Course findCourse (int courseCode){
 		
 		Course resultedCourse = null;

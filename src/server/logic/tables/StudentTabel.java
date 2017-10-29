@@ -52,6 +52,8 @@ public class StudentTabel {
 	   return studentList.get(index);
 		
 	}
+   
+   
    public Object deregisterOrDrop (int courseCode){
 	   if(JavaReminder.day >=UniversityTable.COURSEREGISTRATIONSTART && JavaReminder.day <=UniversityTable.LASTDAYDEREGISTRATION){
 		   return deregisterCourse(courseCode);
@@ -67,7 +69,7 @@ public class StudentTabel {
 			
 		if (toBeRegisteredInCourse!=null && taregetedStudent!=null && 
 				 !taregetedStudent.isMaxCouresesReached() &&taregetedStudent.registerCourse(toBeRegisteredInCourse)){
-			
+			toBeRegisteredInCourse.addStudent(taregetedStudent);
 				result=true;
 				logger.info(String.format("Operation:Course Registeration by Student;Course[%d], Student[%s];State:Success;"
 							 ,toBeRegisteredInCourse.getCode(),taregetedStudent.getName()));		
@@ -93,6 +95,8 @@ public class StudentTabel {
 				 !taregetedStudent.isMaxCouresesReached() &&studentInTarget!=null){
 			
 				studentInTarget.dropCourse(toBeDroppedcourse);
+				toBeDroppedcourse.removeStudent(studentInTarget);
+				
 				result=true;
 				logger.info(String.format("Operation:Course Drop by Student;Course[%d], Student[%s];State:Success;"
 							 ,toBeDroppedcourse.getCode(),taregetedStudent.getName()));		
@@ -132,10 +136,6 @@ public class StudentTabel {
 	}
 	
 	
-	private Course lookupCourseByCode(int courseCode) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	public Object lookupStudentById(int studentNumber) {
 		// TODO Auto-generated method stub

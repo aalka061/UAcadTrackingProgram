@@ -78,7 +78,7 @@ public class AcceptanceTests {
 	}
 	
 	@Test
-	public void clerkCancelsCOourse_success() {
+	public void clerkCancelsCourse_success() {
 		
 		int existedCourseCode = 100001;
 		int existedStudentNum = 1;
@@ -97,5 +97,51 @@ public class AcceptanceTests {
 		assertEquals(expectedNumberOfStudent, numberOfStudents);
 		
 	}
+	
+
+	@Test
+	public void studentRegistersForCourse_success() {
+		
+		int existedCourseCode = 100001;
+		int existedStudentNum = 1;
+
+		studentTable.lookupStudentById(existedStudentNum);
+		studentTable.registerCourse(existedCourseCode);
+		Course course = courseTable.findCourse(existedCourseCode);
+		
+		int numberOfregisteredStudents =course.Students().size();
+		int expectedNumberOfStudent= 1;
+		assertEquals(expectedNumberOfStudent, numberOfregisteredStudents);
+		
+	}
+	
+	
+	@Test
+	public void studentDropCourse_success() {
+		
+		int existedCourseCode = 100001;
+		int existedStudentNum = 1;
+		Course course = courseTable.findCourse(existedCourseCode);
+
+		studentTable.lookupStudentById(existedStudentNum);
+		studentTable.registerCourse(existedCourseCode);
+		
+		int numberOfregisteredStudents =course.Students().size();
+		int expectedNumberOfStudent= 1;
+		assertEquals(expectedNumberOfStudent, numberOfregisteredStudents);
+		
+		studentTable.dropCourse(existedCourseCode);
+		numberOfregisteredStudents = course.Students().size();
+		expectedNumberOfStudent = 0;
+		assertEquals(expectedNumberOfStudent, numberOfregisteredStudents);
+
+		
+	}
+	
+
+	
+	
+	
+	
 
 }

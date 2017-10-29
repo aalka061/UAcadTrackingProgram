@@ -74,11 +74,15 @@ public class UniversityTable {
 			 universitiesList.get(0).creatStudent(studentsNames[i], studentsAge[i], 
 					 isFulltime[i]);
 		 }	
-		 logger.info(String.format("Operation:Initialize Univeristy uOttawa with %d courses",initCourses));
+		 logger.info(String.format("Operation:Initialize University uOttawa with %d courses and %d students",
+				 initCourses, studentsNames.length));
 		 
 		
 	}
-	 
+	 public void clearUniversityTable(){
+		 universitiesList.get(0).students().clear();
+		 universitiesList.get(0).courses().clear();
+	 }
 	 public void termStarts() {
 			// TODO Auto-generated method stub
 		
