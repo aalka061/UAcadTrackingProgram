@@ -18,16 +18,30 @@ public class AcceptanceTests {
 		
 		universityTable = UniversityTable.getInstance();
 		courseTable = CourseTabel.getInstance();
+	//	universityTable.clearUniversityTable();
 	}
 
 	@After
 	public void tearDown() throws Exception {
-		
+		//universityTable.clearUniversityTable();
 	}
 
 	@Test
-	public void clerkCreatesCourseTest() {
+	public void clerkCreatesCourseTest_success() {
+		
 		universityTable.createcourse("MobileCommerce", 30);
+		// 4/5 is automatically generated +1 for the new one
+		int expectedNumberOfCourses = 5;  
+		int actualNumberOfCourses = courseTable.size();
+		assertEquals(expectedNumberOfCourses, actualNumberOfCourses);
+		
+	}
+	
+	@Test
+	public void clerkCreatesCourseTest_fail_sameCourseName() {
+		UniversityTable TempTabel= UniversityTable.getInstance();
+		TempTabel.createcourse("Machine Learning", 30);
+		
 		// 4/5 is automatically generated +1 for the new one
 		int expectedNumberOfCourses = 5;  
 		int actualNumberOfCourses = courseTable.size();
