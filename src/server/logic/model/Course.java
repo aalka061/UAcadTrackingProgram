@@ -338,8 +338,10 @@ public void setWeightsOfaCourse(){
 		
 			}
 		}
-		System.out.println(isHasFinal()+ " "+ getNumberOfMidterms() +" "+getNumberOfAssignments() + " "+ getCode());
-
+		System.out.println();
+		System.out.println("New Course created "+ getCode()+"--hasFinal:"+ isHasFinal()+ "| number of Medterms: "
+		+ getNumberOfMidterms() +" |number of As: "+getNumberOfAssignments());
+ 
 		
 		
 		
@@ -376,20 +378,24 @@ public void setWeightsOfaCourse(){
 
 	public void setDueDates() {
 		
-		
+		System.out.print("    Due dates for Assignements: ");
 		if (numberOfAssignments>1){
 			int timeLimitAs= UniversityTable.TERMDURATION/numberOfAssignments;
 			int accTime = timeLimitAs; 
 			for (int i=0 ; i<numberOfAssignments; i++) {
 				dueDayAssignements[i]= UniversityTable.TERMSTARTDAY+accTime;
 				accTime = accTime+timeLimitAs;
-				System.out.println(dueDayAssignements[i]);
+				System.out.print("A"+(i+1)+":"+dueDayAssignements[i]+" ");
 
 			}
 		} else if (numberOfAssignments==1) {
 			dueDayAssignements[0] = UniversityTable.TERMSTARTDAY+35;
+			System.out.print("A1: "+dueDayAssignements[0]);
+
 		} 
-		
+		System.out.println();
+		System.out.print("    Due dates for Midterms: ");
+
 		if (numberOfMidterms>1){
 			int timeLimitMs= UniversityTable.TERMDURATION/numberOfMidterms;
 			int m1 = randInt(20,30); // first midterm 
@@ -398,11 +404,13 @@ public void setWeightsOfaCourse(){
 			dueDayMidterms[0]= UniversityTable.TERMSTARTDAY+m1;
 			dueDayMidterms[1]= UniversityTable.TERMSTARTDAY+m2;
 			
-			System.out.println(dueDayMidterms[0]);
-			System.out.println(dueDayMidterms[1]);
+			System.out.print("M1: "+dueDayMidterms[0]+" ");
+			System.out.print("M2: "+dueDayMidterms[1]);
 			
 		} else if(numberOfMidterms==1) {
 			dueDayMidterms[0] = UniversityTable.TERMSTARTDAY+40;
+			System.out.print("M1: "+dueDayMidterms[0]);
+
 		} 
 		
 	}

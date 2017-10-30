@@ -90,8 +90,8 @@ public class OutputHandler {
         //boolean email=strArray[0].contains("@");
         int capSize = Integer.parseInt(strArray[1]);
         Object result="";
-        if(JavaReminder.day>4){
-        	output.setOutput("Failed, Deadline is Passed!");
+        if(JavaReminder.day>UniversityTable.COURSECREACTIONDEADLINE){
+        	output.setOutput("Sorry, Deadline is Passed!");
         	output.setState(OVERDUECOURSECREATION);
 
         }
@@ -120,7 +120,12 @@ public class OutputHandler {
         int sAge = Integer.parseInt(strArray[1]);
         boolean isFulltime=Boolean.valueOf(strArray[2]);
         Object result="";
-        if(strArray.length!=3 ){
+        if(JavaReminder.day>UniversityTable.COURSECREACTIONDEADLINE){
+        	output.setOutput("Sorry, Deadline is Passed!");
+        	output.setState(OVERDUECOURSECREATION);
+
+        }
+        else  if(strArray.length!=3 ){
         	output.setOutput("Your input should in this format:'name,age (int),true (full time)'");
         	output.setState(CREATESTUDENT);
 
@@ -174,7 +179,11 @@ public Output cancelCourse(String input) {
         int courseCode = Integer.parseInt(input);
       //  boolean isFulltime=Boolean.valueOf(strArray[2]);
         Object result="";
-        if(!isCourseCodeNumber){
+        if(JavaReminder.day>UniversityTable.COURSECREACTIONDEADLINE){
+        	output.setOutput("Sorry, Deadline is Passed!");
+        	output.setState(OVERDUECOURSECREATION);
+
+        }else if(!isCourseCodeNumber){
         	output.setOutput("Your input should be a a course code'");
         	output.setState(CANCELCOURSE);
 

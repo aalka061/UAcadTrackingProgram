@@ -20,8 +20,8 @@ public class UniversityTable {
 	private Logger logger = Trace.getInstance().getLogger("opreation_file");
 	List <ApplicationUniversityMediator> universitiesList = new ArrayList<ApplicationUniversityMediator> ();
 	JavaReminder newTimer = null;
-	private int dayInSecond = 2;
-	private final int time =2;
+	private int dayInSecond = 4;
+	private final int time =4;
 	public static final int COURSECREACTIONDEADLINE= 20;
 	public static final int COURSEREGISTRATIONSTART= 21;
 	public static final int REGISTRATIONDURATION   = 34;
@@ -82,6 +82,30 @@ public class UniversityTable {
 	 public void clearUniversityTable(){
 		 universitiesList.get(0).students().clear();
 		 universitiesList.get(0).courses().clear();
+	 }
+	 
+	 public void cleanNewAddedCoursesAndStudents(){
+		 
+		 for (int i=4; i<universitiesList.get(0).students().size(); i++){
+			 universitiesList.get(0).students().remove(i);
+		 }
+		 for (int i=4; i<universitiesList.get(0).courses().size(); i++){
+			 universitiesList.get(0).courses().remove(i);
+		 }
+		 for (int i=0; i<universitiesList.get(0).courses().size(); i++){
+			 Course course = universitiesList.get(0).courses().get(i);
+			 for(int j=0; j<course.Students().size();j++){
+				 course.Students().remove(j);
+			 }
+		 }
+		 for (int i=0; i<universitiesList.get(0).students().size(); i++){
+			 Student student= universitiesList.get(0).students().get(i);
+			 student.getCurrentCourses().clear();
+		 }
+		 
+		 
+		 
+		
 	 }
 	 public void termStarts() {
 			// TODO Auto-generated method stub
@@ -211,6 +235,8 @@ public class UniversityTable {
 			 
 			 
 		 }
+	 
+	 
 
 	 public Object createcourse(String string, int capSize) {		
 			boolean result=true;
@@ -277,7 +303,7 @@ public class UniversityTable {
 			 universitiesList.get(0).registerStudentForCourse(toBeRegisteredSt, toBeRegisteredCo);
 			 result=true;
 			 logger.info(String.format("Operation:Student Registration;Student [%s], Course[%s];State:Success;"
-						+ "Reason:The Student or Course does not exist.", toBeRegisteredSt.getName(),toBeRegisteredCo.title()));
+						+  toBeRegisteredSt.getName(),toBeRegisteredCo.title()));
 
 		}else{
 			result=false;
@@ -335,6 +361,26 @@ public class UniversityTable {
 	
 		return result;	
 	}
+	
+	 public Object deleteStudent(int studentNumber) {		
+			boolean result=true;
+			int flag=0;
+			Student student= StudentTabel.getInstance().getSutdent(studentNumber-1);
+			
+			if (student!=null){
+				StudentTabel.getInstance().deleteSutdent(studentNumber-1);
+				result = true; 
+				logger.info(String.format("Operation:Remove Student;Student:[%d];State:Success", studentNumber));
+				
+			} else {
+				result = false;
+				logger.info(String.format("Operation:Remove Student;Student:[%d];State; Fail + Rea"
+						+ "Reason: Student %d is not in the System", studentNumber));
+
+			}
+			return result;	
+		}
+	 
 	
 	// used to generate a number between min and max 
 		public int randInt(int min, int max) {

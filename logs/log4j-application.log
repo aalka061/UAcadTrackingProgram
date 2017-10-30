@@ -1,136 +1,39 @@
-2017-10-29 15:08:59 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:08:59 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:08:59 INFO  String:77 - Operation:Initialize Univeristy uOttawa with 4 courses
-@2017-10-29 15:08:59 INFO  String:226 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:14:22 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:14:22 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:16:00 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:16:00 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:16:00 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:16:00 INFO  String:227 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:16:00 INFO  String:230 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 15:16:50 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:16:50 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:16:50 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:16:50 INFO  String:227 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:16:50 INFO  String:230 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 15:21:19 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:21:19 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:21:19 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:21:19 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:21:19 INFO  String:230 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Success
-@2017-10-29 15:21:45 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:21:45 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:21:45 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:21:45 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:21:45 INFO  String:230 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Success
-@2017-10-29 15:22:35 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:22:35 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:22:35 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:22:35 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:22:35 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 15:24:03 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:24:03 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:24:03 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:24:03 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:24:03 INFO  String:230 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Success
-@2017-10-29 15:25:47 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:25:47 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:25:47 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:25:47 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:25:47 INFO  String:230 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Success
-@2017-10-29 15:27:35 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:27:35 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:27:35 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:27:35 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:27:35 INFO  String:230 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Success
-@2017-10-29 15:29:33 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:29:33 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:29:33 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:29:33 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:29:33 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 15:35:28 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:35:28 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:35:28 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:35:28 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:35:28 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 15:35:28 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 15:36:05 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:36:05 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:36:05 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:36:05 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 15:36:49 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:36:49 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:36:49 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:36:49 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:36:49 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 15:36:49 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 15:36:49 INFO  String:262 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
-@2017-10-29 15:48:08 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 15:48:08 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 15:48:08 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 15:48:08 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 15:48:08 INFO  String:279 - Operation:Student Registration;Student [Emley], Course[Machine Learning];State:Success;Reason:The Student or Course does not exist.
-@2017-10-29 15:48:08 INFO  String:303 - Operation:Course Cancellation;Course[Machine Learning,100001];State:Success;
-@2017-10-29 15:48:08 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 15:48:08 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 15:48:08 INFO  String:262 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
-@2017-10-29 16:04:44 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 16:04:44 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 16:04:44 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 16:04:44 INFO  String:279 - Operation:Student Registration;Student [Emley], Course[Machine Learning];State:Success;Reason:The Student or Course does not exist.
-@2017-10-29 16:04:44 INFO  String:303 - Operation:Course Cancellation;Course[Machine Learning,100001];State:Success;
-@2017-10-29 16:04:44 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 16:04:44 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 16:04:44 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 16:04:44 INFO  String:147 - Operation:Student Lookup;Student[1];State:Success;
-@2017-10-29 16:04:44 INFO  String:72 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
-@2017-10-29 16:04:44 INFO  String:262 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
-@2017-10-29 16:17:01 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 16:17:01 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 16:17:01 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 16:17:01 INFO  String:279 - Operation:Student Registration;Student [Emley], Course[Machine Learning];State:Success;Reason:The Student or Course does not exist.
-@2017-10-29 16:17:01 INFO  String:303 - Operation:Course Cancellation;Course[Machine Learning,100001];State:Success;
-@2017-10-29 16:17:01 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 16:17:01 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 16:17:01 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 16:17:01 INFO  String:147 - Operation:Student Lookup;Student[1];State:Success;
-@2017-10-29 16:17:01 INFO  String:72 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
-@2017-10-29 16:17:01 INFO  String:262 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
-@2017-10-29 16:23:23 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 16:23:23 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 16:23:23 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 16:23:23 INFO  String:279 - Operation:Student Registration;Student [Emley], Course[Machine Learning];State:Success;Reason:The Student or Course does not exist.
-@2017-10-29 16:23:23 INFO  String:303 - Operation:Course Cancellation;Course[Machine Learning,100001];State:Success;
-@2017-10-29 16:23:23 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 16:23:23 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 16:23:23 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 16:23:23 INFO  String:147 - Operation:Student Lookup;Student[1];State:Success;
-@2017-10-29 16:23:23 INFO  String:72 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
-@2017-10-29 16:23:23 INFO  String:262 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
-@2017-10-29 16:40:32 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 16:40:32 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 16:40:33 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 16:40:33 INFO  String:151 - Operation:Student Lookup;Student[1];State:Success;
-@2017-10-29 16:40:33 INFO  String:74 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
-@2017-10-29 16:40:33 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 16:40:33 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 16:40:33 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 16:40:33 INFO  String:151 - Operation:Student Lookup;Student[1];State:Success;
-@2017-10-29 16:40:33 INFO  String:74 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
-@2017-10-29 16:40:33 INFO  String:262 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
-@2017-10-29 16:41:27 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
-@2017-10-29 16:41:27 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
-@2017-10-29 16:41:27 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
-@2017-10-29 16:41:27 INFO  String:151 - Operation:Student Lookup;Student[1];State:Success;
-@2017-10-29 16:41:27 INFO  String:74 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
-@2017-10-29 16:41:27 INFO  String:101 - Operation:Course Drop by Student;Course[100001], Student[Emley];State:Success;
-@2017-10-29 16:41:27 INFO  String:279 - Operation:Student Registration;Student [Emley], Course[Machine Learning];State:Success;Reason:The Student or Course does not exist.
-@2017-10-29 16:41:27 INFO  String:303 - Operation:Course Cancellation;Course[Machine Learning,100001];State:Success;
-@2017-10-29 16:41:27 INFO  String:230 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
-@2017-10-29 16:41:27 INFO  String:233 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
-@2017-10-29 16:41:27 INFO  String:257 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
-@2017-10-29 16:41:27 INFO  String:151 - Operation:Student Lookup;Student[1];State:Success;
-@2017-10-29 16:41:27 INFO  String:74 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
-@2017-10-29 16:41:27 INFO  String:262 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
+2017-10-29 23:48:17 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-10-29 23:48:17 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-10-29 23:48:17 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-10-29 23:48:17 INFO  String:256 - Operation:Create New Course;Course Info:[software usability II,30];State:Success
+@2017-10-29 23:48:17 INFO  String:256 - Operation:Create New Course;Course Info:[Calculs I,100];State:Success
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[1];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100004], Student[Emley];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100005], Student[Emley];State:Success;
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[3];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100000], Student[Linda];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100001], Student[Linda];State:Success;
+@2017-10-29 23:48:17 INFO  String:80 - Operation:Course Registeration by Student;Course[100002];State:Fail;max number of courses have been reached .
+@2017-10-29 23:48:17 INFO  String:256 - Operation:Create New Course;Course Info:[software,30];State:Success
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[1];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100003], Student[Emley];State:Success;
+@2017-10-29 23:48:17 INFO  String:114 - Operation:Course Drop by Student;Course[100003], Student[Emley];State:Success;
+@2017-10-29 23:48:17 INFO  String:256 - Operation:Create New Course;Course Info:[Calculs I,100];State:Success
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[1];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100000], Student[Emley];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[1];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100002], Student[Emley];State:Success;
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[1];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100003], Student[Emley];State:Success;
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[1];State:Success;
+@2017-10-29 23:48:17 INFO  String:80 - Operation:Course Registeration by Student;Course[100004];State:Fail;max number of courses have been reached .
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[4];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100000], Student[Richard];State:Success;
+@2017-10-29 23:48:17 INFO  String:114 - Operation:Course Drop by Student;Course[100000], Student[Richard];State:Success;
+@2017-10-29 23:48:17 INFO  String:305 - Operation:Student Registration;Student [Michelle], Course[Machine Learning];State:Success;Reason:The Student or Course does not exist.
+@2017-10-29 23:48:17 INFO  String:329 - Operation:Course Cancellation;Course[Machine Learning,100001];State:Success;
+@2017-10-29 23:48:17 INFO  String:256 - Operation:Create New Course;Course Info:[MobileCommerce,30];State:Success
+@2017-10-29 23:48:17 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,30];State:Fail;Reason:The User already existed.
+@2017-10-29 23:48:17 INFO  String:283 - Operation:Create New Student;Student Info:[Simon,17,false];State:Success
+@2017-10-29 23:48:17 INFO  String:164 - Operation:Student Lookup;Student[2];State:Success;
+@2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100003], Student[Michelle];State:Success;
+@2017-10-29 23:48:17 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
+@2017-10-29 23:48:17 INFO  String:373 - Operation:Remove Student;Student:[1];State:Success
 @
