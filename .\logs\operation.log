@@ -1336,4 +1336,387 @@
 @2017-10-29 23:48:17 INFO  String:87 - Operation:Course Registeration by Student;Course[100003], Student[Michelle];State:Success;
 @2017-10-29 23:48:17 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,17];State:Fail;Reason:The Student already existed.
 @2017-10-29 23:48:17 INFO  String:373 - Operation:Remove Student;Student:[1];State:Success
+@2017-11-07 10:51:35 INFO  LibServer:37 - Binding to port 8080
+@2017-11-07 10:51:35 INFO  LibServer:67 - Waiting for a client ...
+@2017-11-07 10:51:35 INFO  LibServer:51 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-11-07 10:51:35 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-07 10:51:35 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-07 10:51:35 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-07 12:00:33 INFO  LibServer:37 - Binding to port 8080
+@2017-11-07 12:00:33 INFO  LibServer:67 - Waiting for a client ...
+@2017-11-07 12:00:33 INFO  LibServer:51 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-11-07 12:00:33 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-07 12:00:33 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-07 12:00:33 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-07 12:02:30 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:58768] Client Socket: [58768 ]
+
+@2017-11-07 12:02:30 INFO  LibClient:34 - 58768 : Connected to server: /127.0.0.1
+@2017-11-07 12:02:30 INFO  LibClient:35 - 58768 : Connected to portid: 58768
+@2017-11-07 12:02:30 INFO  LibServer:67 - Waiting for a client ...
+@2017-11-07 12:02:30 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58768
+@2017-11-07 12:02:32 INFO  LibServer:106 - Input from 127.0.0.1:58768 
+@2017-11-07 12:02:32 INFO  LibServer:123 - Output to 127.0.0.1:58768 Who Are you?Clerk or Student?
+
+@2017-11-07 12:02:36 INFO  LibServer:106 - Input from 127.0.0.1:58768 clerk
+@2017-11-07 12:02:36 INFO  LibServer:115 - Output to 127.0.0.1:58768 What can I do for you? Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-07 12:02:47 INFO  LibServer:106 - Input from 127.0.0.1:58768 create student
+@2017-11-07 12:02:47 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please Input Student Info:'name,age,True/False(is full time?)'
+
+@2017-11-07 12:03:07 INFO  LibServer:106 - Input from 127.0.0.1:58768 linda,17,True
+@2017-11-07 12:03:07 INFO  String:288 - Operation:Create New Student;Student Info:[linda,17];State:Fail;Reason:The Student already existed.
+@2017-11-07 12:03:07 INFO  LibServer:115 - Output to 127.0.0.1:58768 The Student Already Exists!
+
+@2017-11-07 12:03:10 INFO  LibServer:106 - Input from 127.0.0.1:58768 
+@2017-11-07 12:03:10 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-07 12:03:23 INFO  LibServer:106 - Input from 127.0.0.1:58768 abdul,18,false
+@2017-11-07 12:03:23 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-07 12:03:31 INFO  LibServer:106 - Input from 127.0.0.1:58768 create student
+@2017-11-07 12:03:31 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please Input Student Info:'name,age,True/False(is full time?)'
+
+@2017-11-07 12:03:42 INFO  LibServer:106 - Input from 127.0.0.1:58768 abdul,18,true
+@2017-11-07 12:03:42 INFO  String:283 - Operation:Create New Student;Student Info:[abdul,18,true];State:Success
+@2017-11-07 12:03:42 INFO  LibServer:115 - Output to 127.0.0.1:58768 Success!
+
+@2017-11-07 12:03:44 INFO  LibServer:106 - Input from 127.0.0.1:58768 
+@2017-11-07 12:03:44 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-07 12:03:58 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:58770] Client Socket: [58770 ]
+
+@2017-11-07 12:03:58 INFO  LibServer:67 - Waiting for a client ...
+@2017-11-07 12:03:58 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58770
+@2017-11-07 12:03:58 INFO  LibClient:34 - 58770 : Connected to server: /127.0.0.1
+@2017-11-07 12:03:58 INFO  LibClient:35 - 58770 : Connected to portid: 58770
+@2017-11-07 12:04:03 INFO  LibServer:106 - Input from 127.0.0.1:58770 h
+@2017-11-07 12:04:03 INFO  LibServer:123 - Output to 127.0.0.1:58770 Who Are you?Clerk or Student?
+
+@2017-11-07 12:04:05 INFO  LibServer:106 - Input from 127.0.0.1:58770 student
+@2017-11-07 12:04:05 INFO  LibServer:115 - Output to 127.0.0.1:58770 Please Input Your Student Number'
+
+@2017-11-07 12:04:12 INFO  LibServer:106 - Input from 127.0.0.1:58770 1
+@2017-11-07 12:04:12 INFO  String:164 - Operation:Student Lookup;Student[1];State:Success;
+@2017-11-07 12:04:12 INFO  LibServer:115 - Output to 127.0.0.1:58770 What can I do for you?Menu: Register Course / Drop Course.
+
+@2017-11-07 12:04:16 INFO  LibServer:106 - Input from 127.0.0.1:58770 register course
+@2017-11-07 12:04:16 INFO  LibServer:115 - Output to 127.0.0.1:58770 Registration Is Not Allowed
+
+@2017-11-07 12:05:35 INFO  LibServer:106 - Input from 127.0.0.1:58768 create course
+@2017-11-07 12:05:35 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please Input User Info:'course title,cap size'
+
+@2017-11-07 12:05:54 INFO  LibServer:106 - Input from 127.0.0.1:58768 TDD,29
+@2017-11-07 12:05:54 INFO  String:256 - Operation:Create New Course;Course Info:[TDD,29];State:Success
+@2017-11-07 12:05:54 INFO  LibServer:115 - Output to 127.0.0.1:58768 Success!
+
+@2017-11-07 12:05:56 INFO  LibServer:106 - Input from 127.0.0.1:58768 
+@2017-11-07 12:05:56 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-07 12:06:16 INFO  LibServer:106 - Input from 127.0.0.1:58768 cancel course
+@2017-11-07 12:06:16 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please Input course code :
+
+@2017-11-07 12:06:26 INFO  LibServer:106 - Input from 127.0.0.1:58768 100000
+@2017-11-07 12:06:26 INFO  LibServer:115 - Output to 127.0.0.1:58768 The Course has no Students!
+
+@2017-11-07 12:06:34 INFO  LibServer:106 - Input from 127.0.0.1:58768 
+@2017-11-07 12:06:34 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-07 12:06:46 INFO  LibServer:106 - Input from 127.0.0.1:58768 destroy course
+@2017-11-07 12:06:46 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please Input course code :
+
+@2017-11-07 12:06:50 INFO  LibServer:106 - Input from 127.0.0.1:58768 100000
+@2017-11-07 12:06:50 INFO  String:353 - Operation:Course Eliminatioin;Course[Obejct Oriented Dev.,100000];State:Success;
+@2017-11-07 12:06:50 INFO  LibServer:115 - Output to 127.0.0.1:58768 Success!
+
+@2017-11-07 12:06:56 INFO  LibServer:106 - Input from 127.0.0.1:58768 
+@2017-11-07 12:06:56 INFO  LibServer:115 - Output to 127.0.0.1:58768 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-07 12:10:14 INFO  LibServer:106 - Input from 127.0.0.1:58770 
+@2017-11-07 12:10:14 INFO  LibServer:115 - Output to 127.0.0.1:58770 Please select from the menu.Menu:register/drop course
+
+@2017-11-07 12:10:18 INFO  LibServer:106 - Input from 127.0.0.1:58770 register course
+@2017-11-07 12:10:18 INFO  LibServer:115 - Output to 127.0.0.1:58770 Please Input course code :
+
+@2017-11-07 12:10:23 INFO  LibServer:106 - Input from 127.0.0.1:58770 100001
+@2017-11-07 12:10:23 INFO  String:87 - Operation:Course Registeration by Student;Course[100001], Student[Emley];State:Success;
+@2017-11-07 12:10:23 INFO  LibServer:115 - Output to 127.0.0.1:58770 Success!
+
+@2017-11-07 12:10:26 INFO  LibServer:106 - Input from 127.0.0.1:58770 
+@2017-11-07 12:10:26 INFO  LibServer:115 - Output to 127.0.0.1:58770 Please select from the menu.Menu:register/drop course
+
+@2017-11-07 12:12:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:12:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:12:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:13:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:13:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:13:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:14:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:14:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:14:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:15:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:15:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:15:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:16:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:16:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:16:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:17:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:17:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:17:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:18:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:18:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:18:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:19:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:19:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:19:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:20:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:20:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:20:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:21:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:21:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:21:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:22:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:22:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:22:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:23:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:23:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:23:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:24:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:24:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:24:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:25:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:25:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:25:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:26:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:26:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:26:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:27:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:27:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:27:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:28:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:28:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:28:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:29:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:29:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:29:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:30:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:30:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:30:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:31:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:31:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:31:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:32:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:32:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:32:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:33:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:33:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:33:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:34:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:34:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:34:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:35:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:35:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:35:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:36:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:36:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:36:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:37:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:37:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:37:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:38:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:38:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:38:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:39:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:39:33 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:39:53 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-07 12:40:13 INFO  String:176 - Operation:Initialize Univeristy uOttawa with courses
+@2017-11-20 20:43:57 INFO  LibServer:37 - Binding to port 8080
+@2017-11-20 20:43:57 INFO  LibServer:51 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=8080] 9
+@2017-11-20 20:43:57 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-20 20:43:57 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-20 20:43:57 INFO  LibServer:67 - Waiting for a client ...
+@2017-11-20 20:43:57 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-20 20:44:26 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:37230] Client Socket: [37230 ]
+
+@2017-11-20 20:44:26 INFO  LibServer:67 - Waiting for a client ...
+@2017-11-20 20:44:26 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__37230
+@2017-11-20 20:44:26 INFO  LibClient:34 - 37230 : Connected to server: /127.0.0.1
+@2017-11-20 20:44:26 INFO  LibClient:35 - 37230 : Connected to portid: 37230
+@2017-11-20 20:44:28 INFO  LibServer:106 - Input from 127.0.0.1:37230 
+@2017-11-20 20:44:28 INFO  LibServer:123 - Output to 127.0.0.1:37230 Who Are you?Clerk or Student?
+
+@2017-11-20 20:44:30 INFO  LibServer:106 - Input from 127.0.0.1:37230 client
+@2017-11-20 20:44:30 INFO  LibServer:115 - Output to 127.0.0.1:37230 Who Are you? Clerk or Student?
+
+@2017-11-20 20:44:33 INFO  LibServer:106 - Input from 127.0.0.1:37230 clerk
+@2017-11-20 20:44:33 INFO  LibServer:115 - Output to 127.0.0.1:37230 What can I do for you? Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-20 20:44:36 INFO  LibServer:106 - Input from 127.0.0.1:37230 null
+@2017-11-20 20:44:36 INFO  ServerThread:44 - Class: ServerThread: Exception thrown : Broken pipe (Write failed) 
+
+@2017-11-20 20:44:36 INFO  LibServer:115 - Output to 127.0.0.1:37230 Please select from the menu.Menu:Create Student/Course, Cancel/Destroy Course
+
+@2017-11-21 00:22:50 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:22:50 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:22:50 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:25:24 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:25:24 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:25:24 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:27:53 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:27:53 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:27:53 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:30:32 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:30:32 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:30:33 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:31:07 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:31:07 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:31:07 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:33:18 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:33:18 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:33:18 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:33:57 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:33:57 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:33:57 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:34:43 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:34:43 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:34:43 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:34:43 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 00:37:09 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:37:09 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:37:09 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:37:09 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 00:38:02 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:38:02 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:38:02 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:38:02 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 00:38:44 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 00:38:44 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 00:38:44 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 00:38:44 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 01:14:35 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 01:14:35 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 01:14:35 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 01:14:35 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 02:53:31 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 02:53:31 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 02:53:31 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 02:53:31 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 02:53:31 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:32:09 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:32:09 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:32:09 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:32:09 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:32:09 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:43:16 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:43:16 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:43:16 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:43:16 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:43:16 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:43:16 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 10:48:20 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:48:20 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:48:20 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:48:20 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:48:20 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:50:42 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:50:42 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:50:42 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:50:42 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:50:42 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:50:42 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 10:51:42 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:51:42 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:51:42 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:51:42 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:51:42 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:51:42 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 10:54:17 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:54:17 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:54:17 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:54:17 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:54:17 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:54:17 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 10:54:17 INFO  String:283 - Operation:Create New Student;Student Info:[Sam,18,false];State:Success
+@2017-11-21 10:57:02 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:57:02 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:57:02 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:57:02 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:57:02 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:57:02 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 10:57:37 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:57:37 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:57:37 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:57:37 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:57:37 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:57:37 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 10:59:04 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 10:59:04 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 10:59:04 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 10:59:04 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 10:59:04 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 10:59:04 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 11:00:01 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 11:00:01 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 11:00:01 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 11:00:01 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 11:00:01 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 11:00:01 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 11:00:01 INFO  String:130 - Operation:Create New Student;Student Info:[Simon];State:Fail;Reason:The deadline is passed.
+@2017-11-21 11:01:08 INFO  String:26 - Operation:Initialize Student Table;Student Tabel: []
+@2017-11-21 11:01:08 INFO  String:24 - Operation:Initialize CourseTable;CourseTable: []
+@2017-11-21 11:01:08 INFO  String:77 - Operation:Initialize University uOttawa with 4 courses and 4 students
+@2017-11-21 11:01:08 INFO  String:259 - Operation:Create New Course;Course Info:[Machine Learning,50];State:Fail;Reason:The User already existed.
+@2017-11-21 11:01:08 INFO  String:288 - Operation:Create New Student;Student Info:[Emley,20];State:Fail;Reason:The Student already existed.
+@2017-11-21 11:01:08 INFO  String:99 - Operation:Create New Course;Course Info:[TDD,50];State:Fail;Reason:The deadline is passed.
+@2017-11-21 11:01:08 INFO  String:130 - Operation:Create New Student;Student Info:[Simon];State:Fail;Reason:The deadline is passed.
 @
